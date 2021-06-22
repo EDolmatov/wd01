@@ -1558,7 +1558,7 @@ header {
 }
 .contacts__container_absolute {
     position: absolute;
-    z-index: 12;
+    z-index: 14;
     left: 0;
     right: 0;
     top: 285px;
@@ -1778,7 +1778,7 @@ header {
     .header__search {
         z-index: 23;
         opacity: 0;
-        top: 0;
+        top: 50px;
         left: 0;
         right: 0;
         margin: 0 auto;
@@ -1986,7 +1986,7 @@ header {
 
 }
 
-@media(max-width:1020px) {
+@media(max-width:1000px) {
     .container {
         max-width: 698px;
         padding-left: 15px;

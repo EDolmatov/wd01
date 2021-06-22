@@ -15,11 +15,11 @@ const galleryChoices = new Choices (galleryCustSelect, {
 });
 
 //simplebar
-new SimpleBar(document.getElementById('header__dropdown-1'), { autoHide: false, forceVisible:true, scrollbarMaxSize:28 });
-new SimpleBar(document.getElementById('header__dropdown-2'), { autoHide: false, forceVisible:true, scrollbarMaxSize:28 });
-new SimpleBar(document.getElementById('header__dropdown-3'), { autoHide: false, forceVisible:true, scrollbarMaxSize:28 });
-new SimpleBar(document.getElementById('header__dropdown-4'), { autoHide: false, forceVisible:true, scrollbarMaxSize:28 });
-new SimpleBar(document.getElementById('header__dropdown-5'), { autoHide: false, forceVisible:true, scrollbarMaxSize:28 });
+const sBar1 = new SimpleBar(document.getElementById('header__dropdown-1'), { autoHide: false, forceVisible:true, scrollbarMaxSize:28 });
+const sBar2 = new SimpleBar(document.getElementById('header__dropdown-2'), { autoHide: false, forceVisible:true, scrollbarMaxSize:28 });
+const sBar3 = new SimpleBar(document.getElementById('header__dropdown-3'), { autoHide: false, forceVisible:true, scrollbarMaxSize:28 });
+const sBar4 = new SimpleBar(document.getElementById('header__dropdown-4'), { autoHide: false, forceVisible:true, scrollbarMaxSize:28 });
+const sBar5 = new SimpleBar(document.getElementById('header__dropdown-5'), { autoHide: false, forceVisible:true, scrollbarMaxSize:28 });
 
 
 // Swiper Init
@@ -81,7 +81,7 @@ const bookSwiper = new Swiper('.editions__swiper-container',
                 slidesPerColumn: 1,
                 slidesPerGroup:3
             },
-            1021: {
+            1001: {
                 slidesPerView:2,
                 slidesPerColumn: 1,
                 slidesPerGroup:2
@@ -113,7 +113,7 @@ const partnerSwiper = new Swiper('.projects__swiper-container',
                 slidesPerGroup:3,
                 spaceBetween:50
             },
-            1021: {
+            1001: {
                 slidesPerView:2,
                 slidesPerGroup:2,
                 spaceBetween:50
@@ -155,7 +155,7 @@ function init(){
 
 //JustValidate
 
-new JustValidate('.contacts__form', {
+const validateObj = new JustValidate('.contacts__form', {
     rules: {
         name: 
         {
@@ -165,10 +165,10 @@ new JustValidate('.contacts__form', {
         phone: 
         {
             required: true,
-            function: (name, value) => {
+            function: function () {
                 var selector = document.querySelector("#contacts__phone-field");
-                const phone = selector.inputmask.unmaskedvalue()
-                return Number(phone) && phone.length === 10
+                const phone = selector.inputmask.unmaskedvalue();
+                return Number(phone) && phone.length === 10;
             }
         }
     },
@@ -190,7 +190,7 @@ if (!(('ontouchstart' in window) || window.DocumentTouch && document instanceof 
 function displayDropdawn(dropdawnId, btnId) {
     $('#'+dropdawnId).toggleClass('header__dropdawn_active');
     $('#'+btnId).toggleClass('header__bottom-menu-item_active');
-};
+}
 
 //events
 function displayAllEvents() {
@@ -233,35 +233,35 @@ $('#editions__caption-categories').click(
 );
 
 $('#header__bottom-menu-item-1').click(function(){
-    displayDropdawn('header__dropdown-1', this.id)
+    displayDropdawn('header__dropdown-1', this.id);
 });
 $('#header__bottom-menu-item-2').click(function(){
-    displayDropdawn('header__dropdown-2', this.id)
+    displayDropdawn('header__dropdown-2', this.id);
 });
 $('#header__bottom-menu-item-3').click(function(){
-    displayDropdawn('header__dropdown-3', this.id)
+    displayDropdawn('header__dropdown-3', this.id);
 });
 $('#header__bottom-menu-item-4').click(function(){
-    displayDropdawn('header__dropdown-4', this.id)
+    displayDropdawn('header__dropdown-4', this.id);
 });
 $('#header__bottom-menu-item-5').click(function(){
-    displayDropdawn('header__dropdown-5', this.id)
+    displayDropdawn('header__dropdown-5', this.id);
 });
 
 $('#events__pages-button-1').click(function(){
-    pagesPickEvents('events__card-1',this.id)
+    pagesPickEvents('events__card-1',this.id);
 });
 $('#events__pages-button-2').click(function(){
-    pagesPickEvents('events__card-2',this.id)
+    pagesPickEvents('events__card-2',this.id);
 });
 $('#events__pages-button-3').click(function(){
-    pagesPickEvents('events__card-3',this.id)
+    pagesPickEvents('events__card-3',this.id);
 });
 $('#events__pages-button-4').click(function(){
-    pagesPickEvents('events__card-4',this.id)
+    pagesPickEvents('events__card-4',this.id);
 });
 $('#events__pages-button-5').click(function(){
-    pagesPickEvents('events__card-5',this.id)
+    pagesPickEvents('events__card-5',this.id);
 });
 
 //Flags
