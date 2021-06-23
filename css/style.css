@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 @font-face {
 	font-family: 'Open Sans';
 	src: url('../fonts/opensans.woff') format('woff');
@@ -1558,10 +1560,7 @@ header {
     transform: translateX(-4px);
     margin-bottom: 16px;
 }
-.container,
-.contacts__container_absolute {
-    transform: translateX(7px);
-}
+
 .contacts__container_absolute {
     position: absolute;
     z-index: 14;
@@ -1962,10 +1961,7 @@ header {
     .contacts {
         padding-top: 80px;
     }
-    .container,
-    .contacts__container_absolute {
-        transform: translateX(0);
-    }
+
     .contacts__left-block {
         max-width: 48%;
     }
