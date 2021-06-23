@@ -996,7 +996,7 @@ header {
     overflow: hidden;
     opacity: 0;
     height: 0;
-    transition: opacity 0.6s ease, height 0.6s ease;
+    transition: opacity 1s ease, height 1s ease;
 }
 .catalog__author-active {
     height: auto;
@@ -1353,7 +1353,9 @@ header {
 }
 
 .editions__right {
-    padding-top: 10px;
+    padding-top: 8px;
+    width: 1150px;
+    overflow: hidden;
 }
 .editions__swiper-container {
     padding-top: 25px;
@@ -1556,6 +1558,10 @@ header {
     transform: translateX(-4px);
     margin-bottom: 16px;
 }
+.container,
+.contacts__container_absolute {
+    transform: translateX(7px);
+}
 .contacts__container_absolute {
     position: absolute;
     z-index: 14;
@@ -1583,6 +1589,9 @@ header {
 }
 .contacts__form {
     margin-bottom: 33px;
+}
+.contacts__form-block {
+    max-width: 420px;
 }
 .contacts__input-field {
     outline: none;
@@ -1872,7 +1881,7 @@ header {
         max-width: 437px;  
     }
     .catalog__names-list {
-        align-items: center;
+        align-items: flex-start;
         max-height: 460px;
         max-width: 437px;
     }
@@ -1929,6 +1938,9 @@ header {
         max-width: 65%;
     }
 
+    .projects__text {
+        max-width: 99%;
+    }
     .projects__partners-header {
         margin-bottom: 25px;
     }
@@ -1949,6 +1961,10 @@ header {
 
     .contacts {
         padding-top: 80px;
+    }
+    .container,
+    .contacts__container_absolute {
+        transform: translateX(0);
     }
     .contacts__left-block {
         max-width: 48%;
@@ -2026,10 +2042,12 @@ header {
     }
     .gallery__right {
         transform: translateX(0);
+        max-width: 668px;
     }
 
     .gallery__swiper-container {
-        max-width: 668px;
+        max-width: 702px;
+        width: 702px;
         overflow: hidden;
     }
     .gallery__hint {
@@ -2186,6 +2204,7 @@ header {
     .projects__btn-next {
     top: 38px;
     }
+    
     .contacts__map-block {
         width: 100%;
         padding-left: 55%;
@@ -2345,6 +2364,7 @@ header {
 
     .gallery__swiper-container {
         max-width: 290px;
+        width: 100%;
         overflow: hidden;
         padding-bottom: 50px;
     }
