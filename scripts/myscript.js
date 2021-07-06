@@ -42,7 +42,7 @@ const gallerySwiper = new Swiper('.gallery__swiper-container',
             prevEl: '.gallery__btn-prev',
         },
         breakpoints: {
-            1601: {
+            1721: {
                 slidesPerView:3,
                 slidesPerColumn: 2,
                 slidesPerGroup:3
@@ -76,7 +76,7 @@ const bookSwiper = new Swiper('.editions__swiper-container',
             prevEl: '.editions__btn-prev',
         },
         breakpoints: {
-            1601: {
+            1721: {
                 slidesPerView:3,
                 slidesPerColumn: 1,
                 slidesPerGroup:3
@@ -108,7 +108,7 @@ const partnerSwiper = new Swiper('.projects__swiper-container',
             prevEl: '.projects__btn-prev',
         },
         breakpoints: {
-            1601: {
+            1721: {
                 slidesPerView:3,
                 slidesPerGroup:3,
                 spaceBetween:50
@@ -189,7 +189,7 @@ if (!(('ontouchstart' in window) || window.DocumentTouch && document instanceof 
 //header dropdown menu
 function displayDropdawn(dropdawnId, btnId) {
     $('#'+dropdawnId).toggleClass('header__dropdawn_active');
-    $('#'+btnId).toggleClass('header__bottom-menu-item_active');
+    $('#'+btnId).toggleClass('header__bottom-menu-btn_active');
 }
 
 //events
@@ -214,10 +214,12 @@ $('.header__search-open,.header__search-close').click(function(){
     $('#header__search').toggleClass('header__search_visible');
 });
 
-$('.header__burger').click(function(){
-    $('#header__btn-enter').toggleClass('header__submenu_visible');
-    $('#header__top-menu').toggleClass('header__submenu_visible');
+$('.header__burger,.header__top-menu-close').click(function(){
+    $('#header__btn-enter,#header__top-menu-close,#header__top-menu').toggleClass('header__submenu_visible');
 });
+$('.header__top-menu-item').click(function(){
+    $('#header__btn-enter,#header__top-menu-close,#header__top-menu').removeClass('header__submenu_visible');
+})
 
 $('.catalog__flag-button').click(function(){
     $('.catalog__flag-button').removeClass('catalog__flag-button_active');
@@ -232,19 +234,19 @@ $('#editions__caption-categories').click(
     toggleEditionsCaption
 );
 
-$('#header__bottom-menu-item-1').click(function(){
+$('#header__bottom-menu-btn-1').click(function(){
     displayDropdawn('header__dropdown-1', this.id);
 });
-$('#header__bottom-menu-item-2').click(function(){
+$('#header__bottom-menu-btn-2').click(function(){
     displayDropdawn('header__dropdown-2', this.id);
 });
-$('#header__bottom-menu-item-3').click(function(){
+$('#header__bottom-menu-btn-3').click(function(){
     displayDropdawn('header__dropdown-3', this.id);
 });
-$('#header__bottom-menu-item-4').click(function(){
+$('#header__bottom-menu-btn-4').click(function(){
     displayDropdawn('header__dropdown-4', this.id);
 });
-$('#header__bottom-menu-item-5').click(function(){
+$('#header__bottom-menu-btn-5').click(function(){
     displayDropdawn('header__dropdown-5', this.id);
 });
 
@@ -272,33 +274,62 @@ function clearArtistInfo() {
     $('.catalog__names-list-item').removeClass('catalog__names-list-item_active');
     $('.catalog__author-descr').removeClass('catalog__author-active');
 }
+function hideEmptyNamelists() {
+    for (var i = 0; i < 7; i++) {
+        var currentNamelist = '#catalog__names' + i;
+        var activeArtists = $(currentNamelist + ' .catalog__active-country');
+        if ( activeArtists.get(0) ) {
+            $(currentNamelist + ' .catalog__names-list').removeClass('catalog__names-list_hidden');
+            $(currentNamelist + ' .catalog__names-empty').removeClass('catalog__names-empty_visible');
+        }
+        else {
+            $(currentNamelist + ' .catalog__names-list').addClass('catalog__names-list_hidden');
+            $(currentNamelist + ' .catalog__names-empty').addClass('catalog__names-empty_visible');
+        }
+    }
+}
 
 $('#catalog__flag-button-1').click(function(){
     resetActiveCountry();
     $('.catalog__France').addClass('catalog__active-country');
+    hideEmptyNamelists();
 });
 $('#catalog__flag-button-2').click(function(){
     resetActiveCountry();
     $('.catalog__Germany').addClass('catalog__active-country');
+    hideEmptyNamelists();
 });
 $('#catalog__flag-button-3').click(function(){
     resetActiveCountry();
     $('.catalog__Italy').addClass('catalog__active-country');
+    hideEmptyNamelists();
 });
 $('#catalog__flag-button-4').click(function(){
     resetActiveCountry();
     $('.catalog__Russia').addClass('catalog__active-country');
+    hideEmptyNamelists();
 });
 $('#catalog__flag-button-5').click(function(){
     resetActiveCountry();
     $('.catalog__Belgium').addClass('catalog__active-country');
+    hideEmptyNamelists();
 });
 
 $('.catalog__names-list-item').click( function() {
     var idInfo = '#' + $(this).attr('id') + '-info';
     clearArtistInfo();
-    $(idInfo).addClass('catalog__author-active');
+    
     $(this).addClass('catalog__names-list-item_active');
-    $(idInfo).get(0).scrollIntoView();
+    if( $(idInfo).get(0) ) {
+        $(idInfo).addClass('catalog__author-active');
+    } 
+    else {
+        $('#artist-unknown').addClass('catalog__author-active');
+    }
+    $('.catalog__authors-left').get(0).scrollIntoView();
 });
+
+hideEmptyNamelists();
+
+
 

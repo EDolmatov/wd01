@@ -23,6 +23,7 @@
             <div class="container flexbox">
                 <button class="header__burger" aria-label="Показать меню">
                 </button>
+                <button type="button" class="header__top-menu-close" id="header__top-menu-close"></button>
                 <a href="" class="header__logo" aria-label="Логотип"><img src="img/Logo.svg" alt="Лого"></a>
                 <nav class="header__top-menu" id="header__top-menu" aria-label="Меню навигации">
                     <ul class="header__top-menu-list">
@@ -49,17 +50,17 @@
                         </li>
                     </ul>
                 </nav>
-                <button class="header__btn-enter" id="header__btn-enter">Войти</button>
-                <button class="header__search-open" aria-label="Открыть меню поиска">
+                <button class="header__btn-enter" id="header__btn-enter" type="button">Войти</button>
+                <button class="header__search-open" aria-label="Открыть меню поиска" type="button">
                 </button>
             </div>           
         </div>
         <div class="header__bottom">
             <div class="container flexbox header__bottom-cont">
                 <ul class="header__bottom-menu" aria-label="Меню">
-                    <li class="header__bottom-menu-li">
-                        <button class="header__bottom-menu-item" id="header__bottom-menu-item-1">
-                            Реализм<span class="header__dropdawn-arrow"></span>
+                    <li class="header__bottom-menu-item">
+                        <button class="header__bottom-menu-btn" id="header__bottom-menu-btn-1">
+                            Реализм
                         </button> 
                         <div id="header__dropdown-1" class="header__dropdawn">
                             <a href="" class="header__dropdawn-item" id="header__dropdawn-item-1">Тинторетто</a>
@@ -72,9 +73,9 @@
                             <a href="" class="header__dropdawn-item" id="header__dropdawn-item-4a">Верроккьо</a>
                         </div>
                     </li>
-                    <li class="header__bottom-menu-li"> 
-                        <button class="header__bottom-menu-item" id="header__bottom-menu-item-2">
-                            Импрессионизм<span class="header__dropdawn-arrow"></span>
+                    <li class="header__bottom-menu-item"> 
+                        <button class="header__bottom-menu-btn" id="header__bottom-menu-btn-2">
+                            Импрессионизм
                         </button> 
                         <div id="header__dropdown-2" class="header__dropdawn">
                             <a href="" class="header__dropdawn-item" id="header__dropdawn-item-5">Моне</a>
@@ -87,9 +88,9 @@
                             <a href="" class="header__dropdawn-item" id="header__dropdawn-item-8a">Ренуар</a>
                         </div>
                     </li>
-                    <li class="header__bottom-menu-li">
-                        <button class="header__bottom-menu-item" id="header__bottom-menu-item-3">
-                            Постимпрессионизм<span class="header__dropdawn-arrow"></span>
+                    <li class="header__bottom-menu-item">
+                        <button class="header__bottom-menu-btn" id="header__bottom-menu-btn-3">
+                            Постимпрессионизм
                         </button> 
                         <div id="header__dropdown-3" class="header__dropdawn">
                             <a href="" class="header__dropdawn-item" id="header__dropdawn-item-9">Ван Гог</a>
@@ -102,9 +103,9 @@
                             <a href="" class="header__dropdawn-item" id="header__dropdawn-item-12a">Сёра</a>
                         </div>
                     </li>
-                    <li class="header__bottom-menu-li">
-                        <button class="header__bottom-menu-item" id="header__bottom-menu-item-4">
-                            Авангард<span class="header__dropdawn-arrow"></span>
+                    <li class="header__bottom-menu-item">
+                        <button class="header__bottom-menu-btn" id="header__bottom-menu-btn-4">
+                            Авангард
                         </button> 
                         <div id="header__dropdown-4" class="header__dropdawn">
                             <a href="" class="header__dropdawn-item" id="header__dropdawn-item-13">Кадинский</a>
@@ -117,9 +118,9 @@
                             <a href="" class="header__dropdawn-item" id="header__dropdawn-item-16a">Пикассо</a>
                         </div>
                     </li>
-                    <li class="header__bottom-menu-li">
-                        <button class="header__bottom-menu-item" id="header__bottom-menu-item-5">
-                            Футуризм<span class="header__dropdawn-arrow"></span>
+                    <li class="header__bottom-menu-item">
+                        <button class="header__bottom-menu-btn" id="header__bottom-menu-btn-5">
+                            Футуризм
                         </button> 
                         <div id="header__dropdown-5" class="header__dropdawn">
                             <a href="" class="header__dropdawn-item" id="header__dropdawn-item-17">Карра</a>
@@ -133,18 +134,20 @@
                         </div>
                     </li>
                 </ul>
-                <form class="header__search" id="header__search" aria-label="Форма Поиск" role="search">
-                    <input type="search" name="search-text" placeholder="Поиск по сайту" class="header__search-field" aria-label="Строка поиска">
-                    <input type="submit" aria-label="Поиск" value="" class="header__search-btn">
-                    <button class="header__search-close">Скрыть</button>
-                </form>
+                <div class="header__search-box">
+                    <form class="header__search" id="header__search" aria-label="Форма Поиск" role="search">
+                        <button aria-label="Поиск" class="header__search-btn"></button>
+                        <input type="search" name="search-text" placeholder="Поиск по сайту" class="header__search-field" aria-label="Строка поиска">
+                        <button class="header__search-close" type="button"></button>
+                    </form>
+                </div>
             </div>
         </div>
     </header>
 
     <section class="hero">
         <div class="container">
-            <h1 class="hero__header">Прикоснитесь к прекрасному</h1>
+            <h2 class="hero__header">Прикоснитесь к прекрасному</h2>
             <p class="hero__text">
                 Мы вынуждены отталкиваться от того, что реализация намеченных 
                 плановых заданий создаёт предпосылки для новых предложений.
@@ -180,9 +183,9 @@
                     Фильтровать по:
                     <br>
                     <select id="gallery__filter-select" aria-label="Фильтр галлереи">
-                        <option class="gallery__select-item" value="1" selected>Автор</option>
-                        <option class="gallery__select-item" value="2">Направление</option>
-                        <option class="gallery__select-item" value="3">Техника</option>
+                        <option class="gallery__select-item" value="1" selected>Живопись</option>
+                        <option class="gallery__select-item" value="2">Рисунок</option>
+                        <option class="gallery__select-item" value="3">Скульптура</option>
                     </select>
                 </label>
             </div>
@@ -220,12 +223,6 @@
                         <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" style="background-image: url('img/pictures/22_pic.png');" tabindex="0"></button>
                         <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" style="background-image: url('img/pictures/23_pic.png');" tabindex="0"></button>
                         <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" style="background-image: url('img/pictures/24_pic.png');" tabindex="0"></button>
-                        <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" style="background-image: url('img/pictures/25_pic.png');" tabindex="0"></button>
-                        <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" style="background-image: url('img/pictures/26_pic.png');" tabindex="0"></button>
-                        <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" style="background-image: url('img/pictures/27_pic.png');" tabindex="0"></button>
-                        <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" style="background-image: url('img/pictures/28_pic.png');" tabindex="0"></button>
-                        <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" style="background-image: url('img/pictures/29_pic.png');" tabindex="0"></button>
-                        <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" style="background-image: url('img/pictures/30_pic.png');" tabindex="0"></button>
                     </div>
                 </div>
             </div>
@@ -273,6 +270,16 @@
             </p>
             <div class="catalog__authors-block">
                 <div class="catalog__authors-left">
+                    <div class="catalog__author-descr" id="artist-unknown">
+                        <img class="catalog__author-img" src="img/Artist_none.jpg" alt="Неизвестный художник">
+                        <h3 class="catalog__author-name" aria-label="Художник">Что мы о нем знаем?</h3>
+                        <p class="catalog__author-bio main-text">
+                            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+                        </p>
+                        <p class="catalog__author-link-gallery main-text">
+                            <a href="#gallery">В галерею</a>
+                        </p>
+                    </div>
                     <div class="catalog__author-descr catalog__author-active" id="artist-Italy-1-info">
                         <img class="catalog__author-img" src="img/Artist.jpg" alt="Доменико Гирландайо">
                         <h3 class="catalog__author-name" aria-label="Художник">Доменико Гирландайо</h3>
@@ -438,103 +445,167 @@
                 </div>
                 <div class="catalog__authors-right">
                     <div class="catalog__dates-list" id="accordion">
-                        <h3 class="flexbox catalog__dates-list-text">C 1400 по 1499 гг.
+                        <h3 class="flexbox catalog__dates-list-text">
+                            <span class="catalog__dates-list-header">C 1400 по 1499 гг.</span> 
                             <button class="catalog__dates-list-btn" aria-label="Раскрыть"></button>
                         </h3>                 
-                        <div class="catalog__names">
+                        <div class="catalog__names" id="catalog__names0">
                             <ul class="catalog__names-list">
-                                <!-- <li class="catalog__names-list-item catalog__Italy catalog__active-country">Бенедетто ди Биндо</li>
-                                <li class="catalog__names-list-item catalog__Italy catalog__active-country">Бергоньоне, Амброджо</li>
-                                <li class="catalog__names-list-item catalog__Italy catalog__active-country">Биссоло, Франческо</li>
-                                <li class="catalog__names-list-item catalog__Italy catalog__active-country">Больтраффио, Джованни</li>
-                                <li class="catalog__names-list-item catalog__Italy catalog__active-country">Бонсиньори, Франческо</li>
-                                <li class="catalog__names-list-item catalog__Italy catalog__active-country">Боттичини, Рафаэлло</li>
-                                <li class="catalog__names-list-item catalog__Italy catalog__active-country">Брамантино</li>
-                                <li class="catalog__names-list-item catalog__Italy catalog__active-country">Бреа, Людовико</li>
-                                <li class="catalog__names-list-item catalog__Italy catalog__active-country">Бьяджо д’Антонио Туччи</li>
-                                <li class="catalog__names-list-item catalog__Italy catalog__active-country">Веккьетта</li>
-                                <li class="catalog__names-list-item catalog__Italy catalog__active-country">Андреа Верроккьо</li> -->
-
-                                <li class="catalog__names-list-item catalog__Belgium" id="artist-Belgium-1">Ван Эйк, Ян</li>
-                                <li class="catalog__names-list-item catalog__names-list-item_active catalog__Italy catalog__active-country" id="artist-Italy-1">Доменико Гирландайо</li>
-                                <li class="catalog__names-list-item catalog__Russia" id="artist-Russia-1">Рублев, Андрей</li>
+                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Бенедетто ди Биндо</button></li>
+                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Бергоньоне, Амброджо</button></li>
+                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Биссоло, Франческо</button></li>
+                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Больтраффио, Джованни</button></li>
+                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Бонсиньори, Франческо</button></li>
+                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Боттичини, Рафаэлло</button></li>
+                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Брамантино</button></li>
+                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Бреа, Людовико</button></li>
+                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Бьяджо д’Антонио Туччи</button></li>
+                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Веккьетта</button></li>
+                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Андреа Верроккьо</button></li>
                                 
-                                <!-- <li class="catalog__names-list-item catalog__Italy catalog__active-country">Беноццо Гоццоли</li>
-                                <li class="catalog__names-list-item catalog__Italy catalog__active-country">Граначчи, Франческо</li>
-                                <li class="catalog__names-list-item catalog__Italy catalog__active-country">Грегорио ди Чекко</li>
-                                <li class="catalog__names-list-item catalog__Italy catalog__active-country">Джованни да Удине</li>
-                                <li class="catalog__names-list-item catalog__Italy catalog__active-country">Джованни ди Паоло</li>
-                                <li class="catalog__names-list-item catalog__Italy catalog__active-country">Джорджоне</li>
-                                <li class="catalog__names-list-item catalog__Italy catalog__active-country">Парентино, Бернардо</li>
-                                <li class="catalog__names-list-item catalog__Italy catalog__active-country">Пезеллино</li>
-                                <li class="catalog__names-list-item catalog__Italy catalog__active-country">Пьетро Перуджино</li>
-                                <li class="catalog__names-list-item catalog__Italy catalog__active-country">Перуцци, Бальдассаре</li>
-                                <li class="catalog__names-list-item catalog__Italy catalog__active-country">Пизанелло</li>
-                                <li class="catalog__names-list-item catalog__Italy catalog__active-country">Пинтуриккьо</li> -->
+                                <li><button class="catalog__names-list-item catalog__Belgium" id="artist-Belgium-1">Ван Эйк, Ян</button></li>
+                                <li><button class="catalog__names-list-item catalog__names-list-item_active catalog__Italy catalog__active-country"
+                                    id="artist-Italy-1">Доменико Гирландайо</button></li>
+                                <li><button class="catalog__names-list-item catalog__Russia" id="artist-Russia-1">Рублев, Андрей</button></li>
+                                
+                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Беноццо Гоццоли</button></li>
+                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Граначчи, Франческо</button></li>
+                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Грегорио ди Чекко</button></li>
+                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Джованни да Удине</button></li>
+                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Джованни ди Паоло</button></li>
+                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Джорджоне</button></li>
+                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Парентино, Бернардо</button></li>
+                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Пинтуриккьо</button></li>
+                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Пезеллино</button></li>
+                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Перуцци, Бальдассаре</button></li>
+                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Пизанелло</button></li>
+                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Пьетро Перуджино</button></li>
                             </ul>
+                            <div class="catalog__names-empty">
+                                <div class="catalog__names-empty-img"></div>
+                                <div class="catalog__names-empty-textblock">
+                                    <h4 class="catalog__names-empty-header">Здесь пока пусто</h4>
+                                    <p class="catalog__names-empty-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                    <a href="#gallery" class="catalog__names-empty-link">В галерею</a>
+                                </div>
+                            </div>
                         </div>
 
-                        <h3 class="flexbox catalog__dates-list-text">C 1500 по 1599 гг.
+                        <h3 class="flexbox catalog__dates-list-text">
+                            <span class="catalog__dates-list-header">C 1500 по 1599 гг.</span> 
                             <button class="catalog__dates-list-btn" aria-label="Раскрыть"></button>
                         </h3>
-                        <div class="catalog__names">
-                            <ul class="catalog__names-list">
-                                <li class="catalog__names-list-item catalog__Germany" id="artist-Germany-1">Дюрер, Альбрехт</li>
-                                <li class="catalog__names-list-item catalog__Italy catalog__active-country" id="artist-Italy-2">Тинторетто</li>
+                        <div class="catalog__names" id="catalog__names1">
+                            <ul class="catalog__names-list" >
+                                <li><button class="catalog__names-list-item catalog__Germany" id="artist-Germany-1">Дюрер, Альбрехт</button></li>
+                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country" id="artist-Italy-2">Тинторетто</button></li>
                             </ul>
+                            <div class="catalog__names-empty">
+                                <div class="catalog__names-empty-img"></div>
+                                <div class="catalog__names-empty-textblock">
+                                    <h4 class="catalog__names-empty-header">Здесь пока пусто</h4>
+                                    <p class="catalog__names-empty-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                    <a href="#gallery" class="catalog__names-empty-link">В галерею</a>
+                                </div>
+                            </div>
                         </div>
 
 
-                        <h3 class="flexbox catalog__dates-list-text">C 1600 по 1699 гг.
+                        <h3 class="flexbox catalog__dates-list-text">
+                            <span class="catalog__dates-list-header">C 1600 по 1699 гг.</span> 
                             <button class="catalog__dates-list-btn" aria-label="Раскрыть"></button>
                         </h3>                      
-                        <div class="catalog__names">
+                        <div class="catalog__names" id="catalog__names2">
                             <ul class="catalog__names-list">
-                                <li class="catalog__names-list-item catalog__Belgium" id="artist-Belgium-2">Рубенс, Питер Пауль</li>
+                                <li><button class="catalog__names-list-item catalog__Belgium" id="artist-Belgium-2">Рубенс, Питер Пауль</button></li>
                             </ul>
+                            <div class="catalog__names-empty">
+                                <div class="catalog__names-empty-img"></div>
+                                <div class="catalog__names-empty-textblock">
+                                    <h4 class="catalog__names-empty-header">Здесь пока пусто</h4>
+                                    <p class="catalog__names-empty-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                    <a href="#gallery" class="catalog__names-empty-link">В галерею</a>
+                                </div>
+                            </div>
                         </div>
 
-                        <h3 class="flexbox catalog__dates-list-text">C 1700 по 1799 гг.
+                        <h3 class="flexbox catalog__dates-list-text">
+                            <span class="catalog__dates-list-header">C 1700 по 1799 гг.</span>
                             <button class="catalog__dates-list-btn" aria-label="Раскрыть"></button>
                         </h3>
-                        <div class="catalog__names">
+                        <div class="catalog__names" id="catalog__names3">
                             <ul class="catalog__names-list">
-                                <li class="catalog__names-list-item catalog__Italy catalog__active-country" id="artist-Italy-3">Тьеполо</li>
-                                <li class="catalog__names-list-item catalog__Russia" id="artist-Russia-2">Никитин, Иван</li>
+                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country" id="artist-Italy-3">Тьеполо</button></li>
+                                <li><button class="catalog__names-list-item catalog__Russia" id="artist-Russia-2">Никитин, Иван</button></li>
                             </ul>
+                            <div class="catalog__names-empty">
+                                <div class="catalog__names-empty-img"></div>
+                                <div class="catalog__names-empty-textblock">
+                                    <h4 class="catalog__names-empty-header">Здесь пока пусто</h4>
+                                    <p class="catalog__names-empty-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                    <a href="#gallery" class="catalog__names-empty-link">В галерею</a>
+                                </div>
+                            </div>
                         </div>
 
-                        <h3 class="flexbox catalog__dates-list-text">C 1800 по 1899 гг.
+                        <h3 class="flexbox catalog__dates-list-text">
+                            <span class="catalog__dates-list-header">C 1800 по 1899 гг.</span>
                             <button class="catalog__dates-list-btn" aria-label="Раскрыть"></button>
                         </h3>
-                        <div class="catalog__names">
+                        <div class="catalog__names" id="catalog__names4">
                             <ul class="catalog__names-list">
-                                <li class="catalog__names-list-item catalog__Russia" id="artist-Russia-3">Васнецов, Виктор</li>
-                                <li class="catalog__names-list-item catalog__France" id="artist-France-1">Ренуар, Пьер Огюст</li>
-                                <li class="catalog__names-list-item catalog__France" id="artist-France-2">Сезанн, Поль</li>
-                                <li class="catalog__names-list-item catalog__Germany" id="artist-Germany-2">Фридрих, Каспар Давид</li>
+                                <li><button class="catalog__names-list-item catalog__Russia" id="artist-Russia-3">Васнецов, Виктор</button></li>
+                                <li><button class="catalog__names-list-item catalog__France" id="artist-France-1">Ренуар, Пьер Огюст</button></li>
+                                <li><button class="catalog__names-list-item catalog__France" id="artist-France-2">Сезанн, Поль</button></li>
+                                <li><button class="catalog__names-list-item catalog__Germany" id="artist-Germany-2">Фридрих, Каспар Давид</button></li>
                             </ul>
+                            <div class="catalog__names-empty">
+                                <div class="catalog__names-empty-img"></div>
+                                <div class="catalog__names-empty-textblock">
+                                    <h4 class="catalog__names-empty-header">Здесь пока пусто</h4>
+                                    <p class="catalog__names-empty-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                    <a href="#gallery" class="catalog__names-empty-link">В галерею</a>
+                                </div>
+                            </div>
                         </div>
 
 
-                        <h3 class="flexbox catalog__dates-list-text">C 1900 по 1999 гг.
+                        <h3 class="flexbox catalog__dates-list-text">
+                            <span class="catalog__dates-list-header">C 1900 по 1999 гг.</span> 
                             <button class="catalog__dates-list-btn" aria-label="Раскрыть"></button>
                         </h3>     
-                        <div class="catalog__names">
+                        <div class="catalog__names" id="catalog__names5">
                             <ul class="catalog__names-list">
-                                <li class="catalog__names-list-item catalog__Russia" id="artist-Russia-4">Малевич, Казимир</li>
-                                <li class="catalog__names-list-item catalog__Italy catalog__active-country" id="artist-Italy-4">Северини, Джино</li>
-                                <li class="catalog__names-list-item catalog__France" id="artist-France-3">Пикассо, Пабло</li>
+                                <li><button class="catalog__names-list-item catalog__Russia" id="artist-Russia-4">Малевич, Казимир</button></li>
+                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country" id="artist-Italy-4">Северини, Джино</button></li>
+                                <li><button class="catalog__names-list-item catalog__France" id="artist-France-3">Пикассо, Пабло</button></li>
                             </ul>
+                            <div class="catalog__names-empty">
+                                <div class="catalog__names-empty-img"></div>
+                                <div class="catalog__names-empty-textblock">
+                                    <h4 class="catalog__names-empty-header">Здесь пока пусто</h4>
+                                    <p class="catalog__names-empty-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                    <a href="#gallery" class="catalog__names-empty-link">В галерею</a>
+                                </div>
+                            </div>
                         </div>
 
-                        <h3 class="flexbox catalog__dates-list-text">C 2000 г.
+                        <h3 class="flexbox catalog__dates-list-text">
+                            <span class="catalog__dates-list-header">C 2000 г.</span>
                             <button class="catalog__dates-list-btn" aria-label="Раскрыть"></button>
                         </h3>
-                        <div class="catalog__names">
+                        <div class="catalog__names" id="catalog__names6">
                             <ul class="catalog__names-list">
 
                             </ul>
+                            <div class="catalog__names-empty">
+                                <div class="catalog__names-empty-img"></div>
+                                <div class="catalog__names-empty-textblock">
+                                    <h4 class="catalog__names-empty-header">Здесь пока пусто</h4>
+                                    <p class="catalog__names-empty-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                    <a href="#gallery" class="catalog__names-empty-link">В галерею</a>
+                                </div>
+                            </div>
                         </div>    
 
                     </div>
@@ -848,20 +919,20 @@
                 необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной 
                 неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское 
                 <span class="tooltip" role="tooltip">
-                    <span class="tooltip-marker" tabindex="0"></span>
+                    <span class="tooltip-marker" tabindex="0">i</span>
                     <span class="tooltip-popup">Пример современных тенденций - современная методология разработки </span>
                     <span class="tooltip-bottom"></span>
                 </span>      
                 обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия 
                 представителей оппозиции могут быть рассмотрены 
                 <span class="tooltip" role="tooltip">
-                    <span class="tooltip-marker" tabindex="0"></span>
+                    <span class="tooltip-marker" tabindex="0">i</span>
                     <span class="tooltip-popup">Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции   </span>
                     <span class="tooltip-bottom"></span>
                 </span> 
                 исключительно в разрезе маркетинговых и финансовых 
                 <span class="tooltip" role="tooltip">
-                    <span class="tooltip-marker" tabindex="0"></span>
+                    <span class="tooltip-marker" tabindex="0">i</span>
                     <span class="tooltip-popup">В стремлении повысить качество </span>
                     <span class="tooltip-bottom"></span>
                 </span> 
