@@ -2047,10 +2047,6 @@ header {
     .contacts__container_absolute {
         max-width: 1124px;
     }
-    .notouch .tooltip-marker:hover,
-    .tooltip-marker:focus {
-        background-image: url('../img/tooltip_close.svg');
-    }
 
     header {
         margin-bottom: -88px;
