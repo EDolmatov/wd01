@@ -288,31 +288,43 @@ function hideEmptyNamelists() {
         }
     }
 }
+function showFirstArtist() {
+    var firstArtist = $('.catalog__active-country:first');
+    var parentElem = firstArtist.closest('div.catalog__names');
+    var parentElemLastSimbol = parentElem.attr('id').slice(-1);
+    $('#catalog__dates-list-text' + parentElemLastSimbol).click();
+    firstArtist.click();    
+}
 
 $('#catalog__flag-button-1').click(function(){
     resetActiveCountry();
     $('.catalog__France').addClass('catalog__active-country');
     hideEmptyNamelists();
+    showFirstArtist();
 });
 $('#catalog__flag-button-2').click(function(){
     resetActiveCountry();
     $('.catalog__Germany').addClass('catalog__active-country');
     hideEmptyNamelists();
+    showFirstArtist();
 });
 $('#catalog__flag-button-3').click(function(){
     resetActiveCountry();
     $('.catalog__Italy').addClass('catalog__active-country');
     hideEmptyNamelists();
+    showFirstArtist();
 });
 $('#catalog__flag-button-4').click(function(){
     resetActiveCountry();
     $('.catalog__Russia').addClass('catalog__active-country');
     hideEmptyNamelists();
+    showFirstArtist();
 });
 $('#catalog__flag-button-5').click(function(){
     resetActiveCountry();
     $('.catalog__Belgium').addClass('catalog__active-country');
     hideEmptyNamelists();
+    showFirstArtist();
 });
 
 $('.catalog__names-list-item').click( function() {

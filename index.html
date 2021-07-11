@@ -145,873 +145,923 @@
         </div>
     </header>
 
-    <section class="hero">
-        <div class="container">
-            <h2 class="hero__header">Прикоснитесь к прекрасному</h2>
-            <p class="hero__text">
-                Мы вынуждены отталкиваться от того, что реализация намеченных 
-                плановых заданий создаёт предпосылки для новых предложений.
-            </p>
-            <button class="hero__btn button__large button__all" onclick="location.href='#contacts__map-block';">
-                Подписаться на рассылку
-                <span class="button__wrapper"></span>
-            </button>
-        </div>
-    </section>
-
-    <section class="about-us" id="about-us" aria-label="О нас">
-        <div class="container">
-            <h2 id="about-us__header" class="headers2">
-                О нас
-            </h2>
-            <p class="about-us__text main-text">
-                Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного 
-                принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный 
-                прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что 
-                высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий 
-                с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей 
-                оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.
-            </p>
-        </div>
-    </section>
-
-    <section class="gallery" id="gallery" aria-label="Галерея">
-        <div class="container flexbox gallery__container">
-            <div class="gallery__left">
-                <h2 class="gallery__header headers2">Галерея</h2>
-                <label class="gallery__label-filter">
-                    Фильтровать по:
-                    <br>
-                    <select id="gallery__filter-select" aria-label="Фильтр галлереи">
-                        <option class="gallery__select-item" value="1" selected>Живопись</option>
-                        <option class="gallery__select-item" value="2">Рисунок</option>
-                        <option class="gallery__select-item" value="3">Скульптура</option>
-                    </select>
-                </label>
-            </div>
-            <div class="gallery__right">
-                <div class="gallery__swiper-container">
-                    <div class="gallery__buttons-block">
-                        <div class="gallery__btn-prev btn-prev" tabindex="0" role="button" aria-label="Предыдущая страница галереи" aria-disabled="false"></div>
-                        <div class="gallery__pagination"></div>
-                        <div class="gallery__btn-next btn-next" tabindex="0" role="button" aria-label="Следующая страница галереи" aria-disabled="false"></div>
-                    </div>
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper gallery__wrapper" id="gallery__wrapper">
-                        <!-- Slides -->
-                        <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" style="background-image: url('img/pictures/1_pic.png');" tabindex="0"></button>
-                        <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" style="background-image: url('img/pictures/2_pic.png');" tabindex="0"></button>
-                        <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" style="background-image: url('img/pictures/3_pic.png');" tabindex="0"></button>
-                        <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" style="background-image: url('img/pictures/4_pic.png');" tabindex="0"></button>
-                        <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" style="background-image: url('img/pictures/5_pic.png');" tabindex="0"></button>
-                        <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" style="background-image: url('img/pictures/6_pic.png');" tabindex="0"></button>
-                        <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" style="background-image: url('img/pictures/7_pic.png');" tabindex="0"></button>
-                        <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" style="background-image: url('img/pictures/8_pic.png');" tabindex="0"></button>
-                        <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" style="background-image: url('img/pictures/9_pic.png');" tabindex="0"></button>
-                        <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" style="background-image: url('img/pictures/10_pic.png');" tabindex="0"></button>
-                        <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" style="background-image: url('img/pictures/11_pic.png');" tabindex="0"></button>
-                        <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" style="background-image: url('img/pictures/12_pic.png');" tabindex="0"></button>
-                        <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" style="background-image: url('img/pictures/13_pic.png');" tabindex="0"></button>
-                        <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" style="background-image: url('img/pictures/14_pic.png');" tabindex="0"></button>
-                        <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" style="background-image: url('img/pictures/15_pic.png');" tabindex="0"></button>
-                        <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" style="background-image: url('img/pictures/16_pic.png');" tabindex="0"></button>
-                        <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" style="background-image: url('img/pictures/17_pic.png');" tabindex="0"></button>
-                        <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" style="background-image: url('img/pictures/18_pic.png');" tabindex="0"></button>
-                        <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" style="background-image: url('img/pictures/19_pic.png');" tabindex="0"></button>
-                        <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" style="background-image: url('img/pictures/20_pic.png');" tabindex="0"></button>
-                        <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" style="background-image: url('img/pictures/21_pic.png');" tabindex="0"></button>
-                        <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" style="background-image: url('img/pictures/22_pic.png');" tabindex="0"></button>
-                        <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" style="background-image: url('img/pictures/23_pic.png');" tabindex="0"></button>
-                        <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" style="background-image: url('img/pictures/24_pic.png');" tabindex="0"></button>
-                    </div>
-                </div>
-            </div>
-            <p class="gallery__hint" role="note">
-                Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="">авторизуйтесь,</a> либо воспользуйтесь лицензией.
-            </p>
-        </div>
-    </section>
-
-    <section class="catalog" id="catalog" aria-label="Каталог">
-        <div class="container">
-            <h2 class="catalog__header headers2">Каталог</h2>
-            <ul class="catalog__flags-block" aria-label="Выбор страны">
-                <li>
-                    <button aria-label="Франция" class="catalog__flag-button" id="catalog__flag-button-1">
-                        <span class="catalog__flag-wrapper" aria-disabled="true"></span>
-                    </button>
-                </li>
-                <li>
-                    <button aria-label="Германия" class="catalog__flag-button" id="catalog__flag-button-2">
-                        <span class="catalog__flag-wrapper" aria-disabled="true"></span>
-                    </button>
-                </li>
-                <li>
-                    <button aria-label="Италия" class="catalog__flag-button catalog__flag-button_active" id="catalog__flag-button-3">
-                        <span class="catalog__flag-wrapper" aria-disabled="true"></span>
-                    </button>
-                </li>
-                <li>
-                    <button aria-label="Россия" class="catalog__flag-button" id="catalog__flag-button-4">
-                        <span class="catalog__flag-wrapper" aria-disabled="true"></span>
-                    </button>
-                </li>
-                <li>
-                    <button aria-label="Бельгия" class="catalog__flag-button" id="catalog__flag-button-5">
-                        <span class="catalog__flag-wrapper" aria-disabled="true"></span>
-                    </button>
-                </li>
-            </ul>
-            <p class="catalog__top-text main-text">
-                Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, 
-                будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить 
-                традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены 
-                на независимые элементы. 
-            </p>
-            <div class="catalog__authors-block">
-                <div class="catalog__authors-left">
-                    <div class="catalog__author-descr" id="artist-unknown">
-                        <img class="catalog__author-img" src="img/Artist_none.jpg" alt="Неизвестный художник">
-                        <h3 class="catalog__author-name" aria-label="Художник">Что мы о нем знаем?</h3>
-                        <p class="catalog__author-bio main-text">
-                            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
-                        </p>
-                        <p class="catalog__author-link-gallery main-text">
-                            <a href="#gallery">В галерею</a>
-                        </p>
-                    </div>
-                    <div class="catalog__author-descr catalog__author-active" id="artist-Italy-1-info">
-                        <img class="catalog__author-img" src="img/Artist.jpg" alt="Доменико Гирландайо">
-                        <h3 class="catalog__author-name" aria-label="Художник">Доменико Гирландайо</h3>
-                        <span class="catalog__author-birth">2 июня 1448 — 11 января 1494.</span>
-                        <p class="catalog__author-bio main-text">
-                            Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. 
-                            Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, 
-                            в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные 
-                            граждане Флоренции в костюмах того времени).
-                        </p>
-                    </div>
-                    <div class="catalog__author-descr" id="artist-Italy-2-info">
-                        <img class="catalog__author-img" src="img/Artist_Italy_2.jpg" alt="Тинторетто Якопо">
-                        <h3 class="catalog__author-name" aria-label="Художник">Тинторетто Якопо</h3>
-                        <span class="catalog__author-birth">29 сентября 1518 – 31 мая 1594</span>
-                        <p class="catalog__author-bio main-text">
-                            Итальянский живописец; наряду с Джованни Беллини, Джорджоне, Тицианом и Веронезе является одним из крупнейших художников, представителей венецианской школы. 
-                            Был сыном красильщика шелка, отсюда прозвище «Тинторетто» (маленький красильщик). Еще в детстве пристрастился к рисованию углем и пользовался красками отца 
-                            для своих живописных опытов на стене дома. Первый биограф художника Ридольфи сообщает о детстве художника: «чтобы лучше изучить приемы наложения красок, 
-                            Тинторетто бегал всюду, где что-нибудь окрашивали и расписывали, и часто принимал участие в работах маляров».
-                        </p>
-                    </div>
-                    <div class="catalog__author-descr" id="artist-Italy-3-info">
-                        <img class="catalog__author-img" src="img/Artist_Italy_3.jpg" alt="Джованни Баттиста Тьеполо">
-                        <h3 class="catalog__author-name" aria-label="Художник">Джованни Баттиста Тьеполо</h3>
-                        <span class="catalog__author-birth">5 марта 1696 — 27 марта 1770</span>
-                        <p class="catalog__author-bio main-text">
-                            Крупнейший художник итальянского рококо, мастер фресок и гравюр, последний великий представитель венецианской школы.
-                        </p>
-                    </div>
-                    <div class="catalog__author-descr" id="artist-Italy-4-info">
-                        <img class="catalog__author-img" src="img/Artist_Italy_4.jpg" alt="Джино Северини">
-                        <h3 class="catalog__author-name" aria-label="Художник">Джино Северини</h3>
-                        <span class="catalog__author-birth">7 апреля 1883 — 26 февраля 1966</span>
-                        <p class="catalog__author-bio main-text">
-                            Итальянский художник, график и скульптор. Северини известен в первую очередь как представитель футуризма и кубизма в искусстве. 
-                            Учился живописи и рисунку в Риме, где в 1900 году познакомился с Джакомо Балла, у которого перенял дивизионистическую технику рисунка. 
-                            В этой манере выполнены в первую очередь полотна, созданные Северини после его переезда в Париж в 1906 году. 
-                            В Париже Северини поддерживал контакты с А. Модильяни, Х. Грисом, Ж. Браком и П. Пикассо, увлёкся теорией аналитического кубизма.
-                        </p>
-                    </div>
-
-                    <div class="catalog__author-descr" id="artist-France-1-info">
-                        <img class="catalog__author-img" src="img/Artist_France_1.jpg" alt="Пьер Огюст Ренуар">
-                        <h3 class="catalog__author-name" aria-label="Художник">Пьер Огюст Ренуар</h3>
-                        <span class="catalog__author-birth">25 февраля 1841 — 3 декабря 1919</span>
-                        <p class="catalog__author-bio main-text">
-                            Французский живописец, график и скульптор, один из основных представителей импрессионизма. Известен, в первую очередь, как мастер светского 
-                            портрета, не лишённого сентиментальности. Ренуар первым из импрессионистов снискал успех у состоятельных парижан. 
-                            В середине 1880-х гг. он фактически порвал с импрессионизмом, вернувшись к линейности классицизма, к «энгризму». Отец знаменитого режиссёра Жана Ренуара.
-                        </p>
-                    </div>
-                    <div class="catalog__author-descr" id="artist-France-2-info">
-                        <img class="catalog__author-img" src="img/Artist_France_2.jpg" alt="Поль Сезанн">
-                        <h3 class="catalog__author-name" aria-label="Художник">Поль Сезанн</h3>
-                        <span class="catalog__author-birth">1839—1906</span>
-                        <p class="catalog__author-bio main-text">
-                            Французский живописец, яркий представитель постимпрессионизма. Художественное наследие Сезанна составляет более 800 работ маслом, не считая акварелей и других произведений. 
-                            Никто не может подсчитать количества работ, уничтоженных, как несовершенные, самим художником за годы своего долгого творческого пути. 
-                            В парижском осеннем Салоне 1904 года целый зал был отведен для демонстрации картин Сезанна. Эта выставка стала первым действительным успехом, более того — триумфом художника.
-                        </p>
-                    </div>
-                    <div class="catalog__author-descr" id="artist-France-3-info">
-                        <img class="catalog__author-img" src="img/Artist_France_3.jpg" alt="Пабло Пикассо">
-                        <h3 class="catalog__author-name" aria-label="Художник">Пабло Пикассо</h3>
-                        <span class="catalog__author-birth">25 октября 1881 — 8 апреля 1973</span>
-                        <p class="catalog__author-bio main-text">
-                            Испанский и французский художник, скульптор, график, театральный художник, керамист и дизайнер.
-                            Основоположник кубизма (совместно с Жоржем Браком и Хуаном Грисом), в котором трёхмерное тело в оригинальной манере изображалось как ряд совмещённых воедино плоскостей. 
-                            Пикассо много работал как график, скульптор, керамист и т. д. Вызвал к жизни массу подражателей и оказал исключительное влияние на развитие изобразительного искусства в XX веке. 
-                            Согласно оценке Музея современного искусства (Нью-Йорк), Пикассо за свою жизнь создал около 20 тысяч работ.
-                        </p>
-                    </div>
-
-                    <div class="catalog__author-descr" id="artist-Russia-1-info">
-                        <img class="catalog__author-img" src="img/Artist_Russia_1.jpg" alt="Андрей Рублев">
-                        <h3 class="catalog__author-name" aria-label="Художник">Андрей Рублев</h3>
-                        <span class="catalog__author-birth">около 1360 - 29 января 1430</span>
-                        <p class="catalog__author-bio main-text">
-                            Русский иконописец московской школы иконописи, книжной и монументальной живописи XV века. Канонизирован Русской православной церковью в лике преподобных. 
-                            На формирование мировоззрения Рублёва большое влияние оказала атмосфера культурного подъёма 2-й половины XIV — начала XV века, для которого характерен 
-                            глубокий интерес к нравственным и духовным проблемам. В своих произведениях в рамках средневековой иконографии Рублёв воплотил новое, возвышенное понимание 
-                            духовной красоты и нравственной силы человека. Творчество Рублёва является одной из вершин русской и мировой культуры. 
-                            В 1405 году Андрей Рублёв вместе с Феофаном Греком и Прохором из Городца расписывал стены Благовещенского собора в Московском Кремле.
-                        </p>
-                    </div>
-                    <div class="catalog__author-descr" id="artist-Russia-2-info">
-                        <img class="catalog__author-img" src="img/Artist_Russia_2.jpg" alt="Никитин Иван">
-                        <h3 class="catalog__author-name" aria-label="Художник">Никитин Иван</h3>
-                        <span class="catalog__author-birth">около 1690 — не ранее 1742</span>
-                        <p class="catalog__author-bio main-text">
-                            Русский живописец-портретист, основатель русской портретной школы XVIII века, один из первых получивший европейское образование. 
-                            Родился в Москве в семье священника. Был певчим в патриаршем хоре, потом учителем рисования и «цифири», то есть арифметики, в артиллерийской школе. 
-                        </p>
-                    </div>
-                    <div class="catalog__author-descr" id="artist-Russia-3-info">
-                        <img class="catalog__author-img" src="img/Artist_Russia_3.jpg" alt="Виктор Васнецов">
-                        <h3 class="catalog__author-name" aria-label="Художник">Виктор Васнецов</h3>
-                        <span class="catalog__author-birth">1848 - 1926</span>
-                        <p class="catalog__author-bio main-text">
-                            Русский художник-живописец и архитектор, мастер исторической и фольклорной живописи. Васнецов является основоположником «неорусского стиля», 
-                            преобразованного из исторического жанра и романтических тенденций, связанных с фольклором и символизмом. Творчество художника сыграло важную роль в 
-                            развитии российского изобразительного искусства от эпохи передвижничества к стилю модерн. Действительный статский советник. 
-                            Младший брат — художник Аполлинарий Васнецов.
-                        </p>
-                    </div>
-                    <div class="catalog__author-descr" id="artist-Russia-4-info">
-                        <img class="catalog__author-img" src="img/Artist_Russia_4.jpg" alt="Казимир Малевич">
-                        <h3 class="catalog__author-name" aria-label="Художник">Казимир Малевич</h3>
-                        <span class="catalog__author-birth">23 февраля 1879 — 15 мая 1935</span>
-                        <p class="catalog__author-bio main-text">
-                            Российский и советский художник-авангардист польского происхождения, педагог, теоретик искусства, философ. 
-                            Основоположник супрематизма — одного из крупнейших направлений абстракционизма.
-                        </p>
-                    </div>
-
-                    <div class="catalog__author-descr" id="artist-Germany-1-info">
-                        <img class="catalog__author-img" src="img/Artist_Germany_1.jpg" alt="Альбрехт Дюрер">
-                        <h3 class="catalog__author-name" aria-label="Художник">Альбрехт Дюрер</h3>
-                        <span class="catalog__author-birth">21 мая 1471 — 6 апреля 1528</span>
-                        <p class="catalog__author-bio main-text">
-                            Немецкий живописец, гравёр и график, один из величайших мастеров западноевропейского Ренессанса. 
-                            Признан крупнейшим европейским мастером ксилографии, поднявшим её на уровень настоящего искусства. 
-                            Первый теоретик искусства среди североевропейских художников, автор практического руководства по изобразительному и 
-                            декоративно-прикладному искусству на немецком языке, пропагандировавший необходимость разностороннего развития художников. 
-                            Основоположник сравнительной антропометрии. Помимо перечисленного оставил заметный след в военно-инженерном деле разработкой теории фортификации. 
-                            Первый из европейских художников, написавший автобиографию.
-                        </p>
-                    </div>
-                    <div class="catalog__author-descr" id="artist-Germany-2-info">
-                        <img class="catalog__author-img" src="img/Artist_Germany_2.jpg" alt="Каспар Давид Фридрих">
-                        <h3 class="catalog__author-name" aria-label="Художник">Каспар Давид Фридрих</h3>
-                        <span class="catalog__author-birth">5 сентября 1774 — 7 мая 1840</span>
-                        <p class="catalog__author-bio main-text">
-                            Немецкий художник эпохи романтизма, один из крупнейших представителей романтического направления в живописи Германии наряду с Филиппом Отто Рунге. 
-                            Среди его последователей — классик норвежской живописи Юхан Кристиан Даль.
-                        </p>
-                    </div>
-
-                    <div class="catalog__author-descr" id="artist-Belgium-1-info">
-                        <img class="catalog__author-img" src="img/Artist_Belgium_1.jpg" alt="Ян ван Эйк">
-                        <h3 class="catalog__author-name" aria-label="Художник">Ян ван Эйк</h3>
-                        <span class="catalog__author-birth">1390 — 1441</span>
-                        <p class="catalog__author-bio main-text">
-                            Ян ван Эйк – ключевая фигура Северного Возрождения, его основоположник.
-                            Ван Эйк считался изобретателем масляных красок, хотя на самом деле он лишь усовершенствовал их. Однако благодаря ему масло получило всеобщее признание.
-                            В течение 16 лет художник был придворным живописцем герцога Бургундского Филиппа Доброго, господина и вассала также связывала крепкая дружба, 
-                            герцог принимал живое участие в судьбе художника, а ван Эйк стал посредником в женитьбе господина.
-                        </p>
-                    </div>
-                    <div class="catalog__author-descr" id="artist-Belgium-2-info">
-                        <img class="catalog__author-img" src="img/Artist_Belgium_2.jpg" alt="Питер Пауль Рубенс">
-                        <h3 class="catalog__author-name" aria-label="Художник">Питер Пауль Рубенс</h3>
-                        <span class="catalog__author-birth">28 июня 1577 — 30 мая 1640</span>
-                        <p class="catalog__author-bio main-text">
-                            Фламандский живописец, один из основоположников искусства барокко, дипломат, коллекционер. Творческое наследие Рубенса насчитывает около 3000 картин, 
-                            значительная часть которых выполнена в сотрудничестве с учениками и коллегами, крупнейшим из которых был Антонис ван Дейк (1599—1641). 
-                            Сохранилась обширная переписка Рубенса, преимущественно дипломатическая. Был возведён в дворянское достоинство испанским королём Филиппом IV (1624) 
-                            и пожалован рыцарством английским королём Карлом I (1630) со включением геральдического льва в личный герб. 
-                            С приобретением в 1635 году замка Стеен в Элевейте Рубенс получил титул сеньора.
-                        </p>
-                    </div>
-                </div>
-                <div class="catalog__authors-right">
-                    <div class="catalog__dates-list" id="accordion">
-                        <h3 class="flexbox catalog__dates-list-text">
-                            <span class="catalog__dates-list-header">C 1400 по 1499 гг.</span> 
-                            <button class="catalog__dates-list-btn" aria-label="Раскрыть"></button>
-                        </h3>                 
-                        <div class="catalog__names" id="catalog__names0">
-                            <ul class="catalog__names-list">
-                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Бенедетто ди Биндо</button></li>
-                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Бергоньоне, Амброджо</button></li>
-                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Биссоло, Франческо</button></li>
-                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Больтраффио, Джованни</button></li>
-                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Бонсиньори, Франческо</button></li>
-                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Боттичини, Рафаэлло</button></li>
-                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Брамантино</button></li>
-                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Бреа, Людовико</button></li>
-                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Бьяджо д’Антонио Туччи</button></li>
-                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Веккьетта</button></li>
-                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Андреа Верроккьо</button></li>
-                                
-                                <li><button class="catalog__names-list-item catalog__Belgium" id="artist-Belgium-1">Ван Эйк, Ян</button></li>
-                                <li><button class="catalog__names-list-item catalog__names-list-item_active catalog__Italy catalog__active-country"
-                                    id="artist-Italy-1">Доменико Гирландайо</button></li>
-                                <li><button class="catalog__names-list-item catalog__Russia" id="artist-Russia-1">Рублев, Андрей</button></li>
-                                
-                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Беноццо Гоццоли</button></li>
-                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Граначчи, Франческо</button></li>
-                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Грегорио ди Чекко</button></li>
-                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Джованни да Удине</button></li>
-                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Джованни ди Паоло</button></li>
-                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Джорджоне</button></li>
-                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Парентино, Бернардо</button></li>
-                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Пинтуриккьо</button></li>
-                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Пезеллино</button></li>
-                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Перуцци, Бальдассаре</button></li>
-                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Пизанелло</button></li>
-                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Пьетро Перуджино</button></li>
-                            </ul>
-                            <div class="catalog__names-empty">
-                                <div class="catalog__names-empty-img"></div>
-                                <div class="catalog__names-empty-textblock">
-                                    <h4 class="catalog__names-empty-header">Здесь пока пусто</h4>
-                                    <p class="catalog__names-empty-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                                    <a href="#gallery" class="catalog__names-empty-link">В галерею</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <h3 class="flexbox catalog__dates-list-text">
-                            <span class="catalog__dates-list-header">C 1500 по 1599 гг.</span> 
-                            <button class="catalog__dates-list-btn" aria-label="Раскрыть"></button>
-                        </h3>
-                        <div class="catalog__names" id="catalog__names1">
-                            <ul class="catalog__names-list" >
-                                <li><button class="catalog__names-list-item catalog__Germany" id="artist-Germany-1">Дюрер, Альбрехт</button></li>
-                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country" id="artist-Italy-2">Тинторетто</button></li>
-                            </ul>
-                            <div class="catalog__names-empty">
-                                <div class="catalog__names-empty-img"></div>
-                                <div class="catalog__names-empty-textblock">
-                                    <h4 class="catalog__names-empty-header">Здесь пока пусто</h4>
-                                    <p class="catalog__names-empty-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                                    <a href="#gallery" class="catalog__names-empty-link">В галерею</a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <h3 class="flexbox catalog__dates-list-text">
-                            <span class="catalog__dates-list-header">C 1600 по 1699 гг.</span> 
-                            <button class="catalog__dates-list-btn" aria-label="Раскрыть"></button>
-                        </h3>                      
-                        <div class="catalog__names" id="catalog__names2">
-                            <ul class="catalog__names-list">
-                                <li><button class="catalog__names-list-item catalog__Belgium" id="artist-Belgium-2">Рубенс, Питер Пауль</button></li>
-                            </ul>
-                            <div class="catalog__names-empty">
-                                <div class="catalog__names-empty-img"></div>
-                                <div class="catalog__names-empty-textblock">
-                                    <h4 class="catalog__names-empty-header">Здесь пока пусто</h4>
-                                    <p class="catalog__names-empty-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                                    <a href="#gallery" class="catalog__names-empty-link">В галерею</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <h3 class="flexbox catalog__dates-list-text">
-                            <span class="catalog__dates-list-header">C 1700 по 1799 гг.</span>
-                            <button class="catalog__dates-list-btn" aria-label="Раскрыть"></button>
-                        </h3>
-                        <div class="catalog__names" id="catalog__names3">
-                            <ul class="catalog__names-list">
-                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country" id="artist-Italy-3">Тьеполо</button></li>
-                                <li><button class="catalog__names-list-item catalog__Russia" id="artist-Russia-2">Никитин, Иван</button></li>
-                            </ul>
-                            <div class="catalog__names-empty">
-                                <div class="catalog__names-empty-img"></div>
-                                <div class="catalog__names-empty-textblock">
-                                    <h4 class="catalog__names-empty-header">Здесь пока пусто</h4>
-                                    <p class="catalog__names-empty-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                                    <a href="#gallery" class="catalog__names-empty-link">В галерею</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <h3 class="flexbox catalog__dates-list-text">
-                            <span class="catalog__dates-list-header">C 1800 по 1899 гг.</span>
-                            <button class="catalog__dates-list-btn" aria-label="Раскрыть"></button>
-                        </h3>
-                        <div class="catalog__names" id="catalog__names4">
-                            <ul class="catalog__names-list">
-                                <li><button class="catalog__names-list-item catalog__Russia" id="artist-Russia-3">Васнецов, Виктор</button></li>
-                                <li><button class="catalog__names-list-item catalog__France" id="artist-France-1">Ренуар, Пьер Огюст</button></li>
-                                <li><button class="catalog__names-list-item catalog__France" id="artist-France-2">Сезанн, Поль</button></li>
-                                <li><button class="catalog__names-list-item catalog__Germany" id="artist-Germany-2">Фридрих, Каспар Давид</button></li>
-                            </ul>
-                            <div class="catalog__names-empty">
-                                <div class="catalog__names-empty-img"></div>
-                                <div class="catalog__names-empty-textblock">
-                                    <h4 class="catalog__names-empty-header">Здесь пока пусто</h4>
-                                    <p class="catalog__names-empty-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                                    <a href="#gallery" class="catalog__names-empty-link">В галерею</a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <h3 class="flexbox catalog__dates-list-text">
-                            <span class="catalog__dates-list-header">C 1900 по 1999 гг.</span> 
-                            <button class="catalog__dates-list-btn" aria-label="Раскрыть"></button>
-                        </h3>     
-                        <div class="catalog__names" id="catalog__names5">
-                            <ul class="catalog__names-list">
-                                <li><button class="catalog__names-list-item catalog__Russia" id="artist-Russia-4">Малевич, Казимир</button></li>
-                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country" id="artist-Italy-4">Северини, Джино</button></li>
-                                <li><button class="catalog__names-list-item catalog__France" id="artist-France-3">Пикассо, Пабло</button></li>
-                            </ul>
-                            <div class="catalog__names-empty">
-                                <div class="catalog__names-empty-img"></div>
-                                <div class="catalog__names-empty-textblock">
-                                    <h4 class="catalog__names-empty-header">Здесь пока пусто</h4>
-                                    <p class="catalog__names-empty-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                                    <a href="#gallery" class="catalog__names-empty-link">В галерею</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <h3 class="flexbox catalog__dates-list-text">
-                            <span class="catalog__dates-list-header">C 2000 г.</span>
-                            <button class="catalog__dates-list-btn" aria-label="Раскрыть"></button>
-                        </h3>
-                        <div class="catalog__names" id="catalog__names6">
-                            <ul class="catalog__names-list">
-
-                            </ul>
-                            <div class="catalog__names-empty">
-                                <div class="catalog__names-empty-img"></div>
-                                <div class="catalog__names-empty-textblock">
-                                    <h4 class="catalog__names-empty-header">Здесь пока пусто</h4>
-                                    <p class="catalog__names-empty-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                                    <a href="#gallery" class="catalog__names-empty-link">В галерею</a>
-                                </div>
-                            </div>
-                        </div>    
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="events" id="events" aria-label="События">
-        <div class="container">
-            <h2 class="events__header headers2">
-                События
-            </h2>
-            <ul class="events__event-list flexbox events__event-list_hide-768" id="events__event-list">
-                <li class="events__card events__card-700px_visible" id="events__card-1">
-                    <img src="img/Event_1.png" class="events__card-img" alt="">
-                    <p class="events__card-text-1">Музей им. Щусева<br>
-                        с 20 марта по 30 апреля
-                    </p>
-                    <h3 class="events__card-header" aria-label="Название события">Книжная гравюра в живом восприятии</h3>
-                    <p class="events__card-text-2 main-text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, 
-                        которую продолжили его брат Давид и сын Ридольфо.
-                    </p>
-                    <a href="" class="events__card-link">Подробнее</a>
-                </li>
-                <li class="events__card" id="events__card-2">
-                    <img src="img/Event_2.png" class="events__card-img" alt="">
-                    <p class="events__card-text-1">ММОМА<br>
-                        24 марта 19:00
-                    </p>
-                    <h3 class="events__card-header" aria-label="Название события">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
-                    <p class="events__card-text-2 main-text">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.
-                    </p>
-                    <a href="" class="events__card-link">Подробнее</a>
-                </li>
-                <li class="events__card" id="events__card-3">
-                    <img src="img/Event_3.png" class="events__card-img" alt="">
-                    <p class="events__card-text-1">Еврейский музей<br>
-                        с 31 марта по 21 апреля
-                    </p>
-                    <h3 class="events__card-header" aria-label="Название события">Выставка «Формация 2020»</h3>
-                    <p class="events__card-text-2 main-text">Идейные соображения высшего порядка, а также современная методология 
-                        разработки играет важную роль в формировании глубокомысленных рассуждений.
-                    </p>
-                    <a href="" class="events__card-link">Подробнее</a>
-                </li>
-                <li class="events__card events__card_hidden" id="events__card-4">
-                    <img src="img/Event_4.png" class="events__card-img" alt="">
-                    <p class="events__card-text-1">Третьяковка на Крымском валу<br>
-                        с 30 марта по 30 апреля
-                    </p>
-                    <h3 class="events__card-header" aria-label="Название события">XXIV Международная биеннале молодого искусства</h3>
-                    <p class="events__card-text-2 main-text">Внезапно, реплицированные с зарубежных источников, современные исследования.
-                    </p>
-                    <a href="" class="events__card-link">Подробнее</a>
-                </li>
-                <li class="events__card events__card_hidden" id="events__card-5">
-                    <img src="img/Event_5.png" class="events__card-img" alt="">
-                    <p class="events__card-text-1">ММАМ<br>
-                        с 8 апреля по 20 мая
-                    </p>
-                    <h3 class="events__card-header" aria-label="Название события">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
-                    <p class="events__card-text-2 main-text">Один из ведущих флорентийских художников Кватроченто, основатель художественной 
-                        династии, которую продолжили его брат Давид и сын Ридольфо.
-                    </p>
-                    <a href="" class="events__card-link">Подробнее</a>
-                </li>
-            </ul>
-
-            <button class="events__btn button__medium button__all">
-                Все события
-                <span class="button__wrapper" aria-disabled="true"></span>
-            </button>
-
-            <div class="events__pages-block" role="radiogroup" aria-label="Переключатель событий">
-                <button aria-label="Событие 1" class="events__pages-button events__pages-button_active" tabindex="0" id="events__pages-button-1"></button>
-                <button aria-label="Событие 2" class="events__pages-button" id="events__pages-button-2" tabindex="0"></button>
-                <button aria-label="Событие 3" class="events__pages-button" id="events__pages-button-3" tabindex="0"></button>
-                <button aria-label="Событие 4" class="events__pages-button" id="events__pages-button-4" tabindex="0"></button>
-                <button aria-label="Событие 5" class="events__pages-button" id="events__pages-button-5" tabindex="0"></button>
-            </div>
-        </div>
-
-    </section>
-    <section class="editions" id="editions">
-        <div class="container flexbox editions__container">
-            <div class="editions__left">
-                <h2 class="editions__header headers2">Издания</h2>            
-                <p class="editions__caption" id="editions__caption-categories">Категории</p>
-                <ul class="editions__category-list" aria-label="Фильтр по категориям">
-                    
-                    <li><label class="editions__category-label">
-                            <input type="checkbox" name="Bestsellers" class="editions__checkbox">
-                            <span class="editions__custom-checkbox" aria-disabled="true"></span>
-                            <span class="editions__category-name">Бестселлеры</span>
-                    </label></li>
-                    
-                    <li><label class="editions__category-label">
-                            <input type="checkbox" name="Art" class="editions__checkbox">
-                            <span class="editions__custom-checkbox" aria-disabled="true"></span>
-                            <span class="editions__category-name">Искусство</span>
-                    </label></li>
-
-                    <li><label class="editions__category-label">
-                            <input type="checkbox" name="Architecture" class="editions__checkbox">
-                            <span class="editions__custom-checkbox" aria-disabled="true"></span>
-                            <span class="editions__category-name">Архитектура</span>
-                    </label></li>
-
-                    <li><label class="editions__category-label">
-                            <input type="checkbox" name="Design" class="editions__checkbox" checked>
-                            <span class="editions__custom-checkbox" aria-disabled="true"></span>
-                            <span class="editions__category-name">Дизайн</span>
-                    </label></li>
-                
-                    <li><label class="editions__category-label">
-                            <input type="checkbox" name="Fashion" class="editions__checkbox">
-                            <span class="editions__custom-checkbox" aria-disabled="true"></span>
-                            <span class="editions__category-name">Мода</span>
-                    </label></li>
-
-                    <li><label class="editions__category-label">
-                            <input type="checkbox" name="Children" class="editions__checkbox">
-                            <span class="editions__custom-checkbox" aria-disabled="true"></span>
-                            <span class="editions__category-name">Детям</span>
-                    </label></li>
-
-                    <li><label class="editions__category-label">
-                            <input type="checkbox" name="Fiction" class="editions__checkbox">
-                            <span class="editions__custom-checkbox" aria-disabled="true"></span>
-                            <span class="editions__category-name">Художественная литература</span>
-                    </label></li>
-                
-                    <li><label class="editions__category-label">
-                            <input type="checkbox" name="Journalism" class="editions__checkbox">
-                            <span class="editions__custom-checkbox" aria-disabled="true"></span>
-                            <span class="editions__category-name">Публицистика</span>
-                    </label></li>
-
-                    <li><label class="editions__category-label">
-                            <input type="checkbox" name="Travel guides" class="editions__checkbox">
-                            <span class="editions__custom-checkbox" aria-disabled="true"></span>
-                            <span class="editions__category-name">Путеводители</span>
-                    </label></li>
-
-                    <li><label class="editions__category-label">
-                            <input type="checkbox" name="Philosophy" class="editions__checkbox">
-                            <span class="editions__custom-checkbox" aria-disabled="true"></span>
-                            <span class="editions__category-name">Философия</span>
-                    </label></li>
-            
-                    <li><label class="editions__category-label">
-                            <input type="checkbox" name="Educational literature" class="editions__checkbox">
-                            <span class="editions__custom-checkbox" aria-disabled="true"></span>
-                            <span class="editions__category-name">Учебная литература</span>
-                    </label></li>
-
-                    <li><label class="editions__category-label">
-                            <input type="checkbox" name="Magazines and newspapers" class="editions__checkbox">
-                            <span class="editions__custom-checkbox" aria-disabled="true"></span>
-                            <span class="editions__category-name">Журналы и газеты</span>
-                    </label></li>
-
-                </ul>
-                <p class="editions__caption editions__caption-price">Цена</p>
-                <div class="editions__prices">
-                    <span class="editions__prices-word">От</span> 
-                    <input type="number" placeholder="50" class="editions__prices-input" id="editions__prices-input-min" aria-label="Минимальная цена" >
-                    <span class="editions__prices-word">до</span>
-                    <input type="number" placeholder="25000" class="editions__prices-input" id="editions__prices-input-max"  aria-label="Максимальная цена" >
-                    руб.
-                </div>
-            </div>
-
-            <div class="editions__right">
-
-                <div class="editions__swiper-container">
-                    <div class="editions__buttons-block">
-                        <div class="editions__btn-prev btn-prev" tabindex="0" role="button" aria-label="Предыдущие книги" aria-disabled="false"></div>
-                        <div class="editions__pagination"></div>
-                        <div class="editions__btn-next btn-next" tabindex="0" role="button" aria-label="Следующие книги" aria-disabled="false"></div>
-                    </div>
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper editions__wrapper" id="editions__wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide editions__slide">
-                            <img src="img/Book_1.jpg" alt="" class="editions__slide-img">
-                            <div class="editions__slide-textblock flexbox">
-                                <div class="editions__slide-book">
-                                    <p class="editions__slide-bookname">Искусство цвета</p>
-                                    <p class="editions__slide-author">Иттен, Иоханнес</p>
-                                </div>
-                                <p class="editions__slide-price">620 руб</p>
-                            </div>
-                            <button class="editions__btn button__small button__all">
-                                Заказать
-                                <span class="button__wrapper" aria-disabled="true"></span>
+    <main>	
+	    <section class="hero">
+	        <div class="container">
+	            <h2 class="hero__header">Прикоснитесь к прекрасному</h2>
+	            <p class="hero__text">
+	                Мы вынуждены отталкиваться от того, что реализация намеченных 
+	                плановых заданий создаёт предпосылки для новых предложений.
+	            </p>
+	            <button class="hero__btn button-large button-all" onclick="location.href='#contacts__map-block';">
+	                Подписаться на рассылку
+	            </button>
+	        </div>
+	    </section>
+	
+	    <section class="about-us" id="about-us" aria-label="О нас">
+	        <div class="container">
+	            <h2 id="about-us__header" class="about-us__header headers2">
+	                О нас
+	            </h2>
+	            <p class="about-us__text main-text">
+	                Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного 
+	                принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный 
+	                прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что 
+	                высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий 
+	                с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей 
+	                оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.
+	            </p>
+	        </div>
+	    </section>
+	
+	    <section class="gallery" id="gallery" aria-label="Галерея">
+	        <div class="container flexbox gallery__container">
+	            <div class="gallery__left">
+	                <h2 class="gallery__header headers2">Галерея</h2>
+	                <label class="gallery__label-filter">
+	                    Фильтровать по:
+	                    <select id="gallery__filter-select" aria-label="Фильтр галлереи">
+	                        <option class="gallery__select-item" value="1" selected>Живопись</option>
+	                        <option class="gallery__select-item" value="2">Рисунок</option>
+	                        <option class="gallery__select-item" value="3">Скульптура</option>
+	                    </select>
+	                </label>
+	            </div>
+	            <div class="gallery__right">
+	                <div class="gallery__swiper-container">
+	                    <div class="gallery__buttons-block">
+	                        <div class="gallery__btn-prev btn-prev" tabindex="0" role="button" aria-label="Предыдущая страница галереи" aria-disabled="false"></div>
+	                        <div class="gallery__pagination"></div>
+	                        <div class="gallery__btn-next btn-next" tabindex="0" role="button" aria-label="Следующая страница галереи" aria-disabled="false"></div>
+	                    </div>
+	                    <!-- Additional required wrapper -->
+	                    <div class="swiper-wrapper gallery__wrapper" id="gallery__wrapper">
+	                        <!-- Slides -->
+                            <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" tabindex="0">
+                                <img src="img/pictures/1_pic.png" alt="" class="gallery__slide-img">
                             </button>
-                        </div>
-
-                        <div class="swiper-slide editions__slide">
-                            <img src="img/Book_2.jpg" alt="" class="editions__slide-img">
-                            <div class="editions__slide-textblock flexbox">
-                                <div class="editions__slide-book">
-                                    <p class="editions__slide-bookname">Типографика
-                                         </p>
-                                    <p class="editions__slide-author">Рудер, Эмиль</p>
-                                </div>
-                                <p class="editions__slide-price">2 450 руб</p>
-                            </div>
-                            <button class="editions__btn button__small button__all">
-                                Заказать
-                                <span class="button__wrapper" aria-disabled="true"></span>
+                            <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" tabindex="0">
+                                <img src="img/pictures/2_pic.png" alt="" class="gallery__slide-img">
                             </button>
-                        </div>
-
-                        <div class="swiper-slide editions__slide">
-                            <img src="img/Book_3.jpg" alt="" class="editions__slide-img">
-                            <div class="editions__slide-textblock flexbox">
-                                <div class="editions__slide-book">
-                                    <p class="editions__slide-bookname">Книга про буквы
-                                         </p>
-                                    <p class="editions__slide-author">Гордон, Юрий  </p>
-                                </div>
-                                <p class="editions__slide-price">2 200 руб</p>
-                            </div>
-                            <button class="editions__btn button__small button__all">
-                                Заказать
-                                <span class="button__wrapper" aria-disabled="true"></span>
+                            <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" tabindex="0">
+                                <img src="img/pictures/3_pic.png" alt="" class="gallery__slide-img">
                             </button>
-                        </div>
-
-                        <div class="swiper-slide editions__slide">
-                            <img src="img/Book_4.jpg" alt="" class="editions__slide-img">
-                            <div class="editions__slide-textblock flexbox">
-                                <div class="editions__slide-book">
-                                    <p class="editions__slide-bookname">
-                                        Николай Ильин
-                                         </p>
-                                    <p class="editions__slide-author"> Кричевский, Владимир  </p>
-                                </div>
-                                <p class="editions__slide-price">1 100 руб</p>
-                            </div>
-                            <button class="editions__btn button__small button__all">
-                                Заказать
-                                <span class="button__wrapper" aria-disabled="true"></span>
+                            <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" tabindex="0">
+                                <img src="img/pictures/4_pic.png" alt="" class="gallery__slide-img">
                             </button>
-                        </div>
-
-                        <div class="swiper-slide editions__slide">
-                            <img src="img/Book_5.jpg" alt="" class="editions__slide-img">
-                            <div class="editions__slide-textblock flexbox">
-                                <div class="editions__slide-book">
-                                    <p class="editions__slide-bookname">
-                                        Модульные сетки в граф...
-                                         </p>
-                                    <p class="editions__slide-author">Мюллер-Брокманн, Йозеф </p>
-                                </div>
-                                <p class="editions__slide-price">1 450 руб</p>
-                            </div>
-                            <button class="editions__btn button__small button__all">
-                                Заказать
-                                <span class="button__wrapper" aria-disabled="true"></span>
+                            <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" tabindex="0">
+                                <img src="img/pictures/5_pic.png" alt="" class="gallery__slide-img">
                             </button>
-                        </div>
-
-                        <div class="swiper-slide editions__slide">
-                            <img src="img/Book_6.jpg" alt="" class="editions__slide-img">
-                            <div class="editions__slide-textblock flexbox">
-                                <div class="editions__slide-book">
-                                    <p class="editions__slide-bookname">
-                                        Эволюция графических ст...     
-                                         </p>
-                                    <p class="editions__slide-author"> Хеллер, Чваст </p>
-                                </div>
-                                <p class="editions__slide-price">3 200 руб</p>
-                            </div>
-                            <button class="editions__btn button__small button__all">
-                                Заказать
-                                <span class="button__wrapper" aria-disabled="true"></span>
+                            <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" tabindex="0">
+                                <img src="img/pictures/6_pic.png" alt="" class="gallery__slide-img">
                             </button>
-                        </div>
-
-                        <div class="swiper-slide editions__slide">
-                            <img src="img/Book_7.jpg" alt="" class="editions__slide-img">
-                            <div class="editions__slide-textblock flexbox">
-                                <div class="editions__slide-book">
-                                    <p class="editions__slide-bookname">
-                                        Искусство и визуальное в...
-                                         </p>
-                                    <p class="editions__slide-author">Арнхейм, Рудольф </p>
-                                </div>
-                                <p class="editions__slide-price">2 200 руб</p>
-                            </div>
-                            <button class="editions__btn button__small button__all">
-                                Заказать
-                                <span class="button__wrapper" aria-disabled="true"></span>
+                            <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" tabindex="0">
+                                <img src="img/pictures/7_pic.png" alt="" class="gallery__slide-img">
                             </button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="projects" id="projects" aria-label="Партнеры">
-        <div class="container projects__container">
-            <h2 class="projects__header headers2">Проекты</h2>
-            <div class="projects__text main-text" role="article">
-                Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует 
-                необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной 
-                неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское 
-                <span class="tooltip" role="tooltip">
-                    <span class="tooltip-marker" tabindex="0">i</span>
-                    <span class="tooltip-popup">Пример современных тенденций - современная методология разработки </span>
-                    <span class="tooltip-bottom"></span>
-                </span>      
-                обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия 
-                представителей оппозиции могут быть рассмотрены 
-                <span class="tooltip" role="tooltip">
-                    <span class="tooltip-marker" tabindex="0">i</span>
-                    <span class="tooltip-popup">Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции   </span>
-                    <span class="tooltip-bottom"></span>
-                </span> 
-                исключительно в разрезе маркетинговых и финансовых 
-                <span class="tooltip" role="tooltip">
-                    <span class="tooltip-marker" tabindex="0">i</span>
-                    <span class="tooltip-popup">В стремлении повысить качество </span>
-                    <span class="tooltip-bottom"></span>
-                </span> 
-                предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, 
-                в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. 
-                Подробнее: <a href="" class="projects__link">blanchard-art.ru/projects/about</a>
-            </div>
-            
-            <h3 class="projects__partners-header">Партнёры проектов:</h3>
-            <div class="project__partners">
-                <div class="projects__btn-prev btn-prev" tabindex="0" role="button" aria-label="Листать назад" aria-disabled="false"></div>
-                <div class="projects__swiper-container flexbox">              
-                    <div class="swiper-wrapper projects__wrapper">
-                        <div class="swiper-slide projects__slide">
-                            <a href="" class="projects__partner-card" id="projects__partner-card-1"></a>
-                        </div>
-                        <div class="swiper-slide projects__slide">
-                            <a href="" class="projects__partner-card" id="projects__partner-card-2"></a>
-                        </div>
-                        <div class="swiper-slide projects__slide">
-                            <a href="" class="projects__partner-card" id="projects__partner-card-3"></a>
-                        </div>
-                        <div class="swiper-slide projects__slide">
-                            <a href="" class="projects__partner-card" id="projects__partner-card-4"></a>
-                        </div>
-                        <div class="swiper-slide projects__slide">
-                            <a href="" class="projects__partner-card" id="projects__partner-card-5"></a>
-                        </div>
-                        <div class="swiper-slide projects__slide">
-                            <a href="" class="projects__partner-card" id="projects__partner-card-6"></a>
-                        </div>
-                        <div class="swiper-slide projects__slide">
-                            <a href="" class="projects__partner-card" id="projects__partner-card-7"></a>
-                        </div>
-                        <div class="swiper-slide projects__slide">
-                            <a href="" class="projects__partner-card" id="projects__partner-card-8"></a>
-                        </div>
-                        <div class="swiper-slide projects__slide">
-                            <a href="" class="projects__partner-card" id="projects__partner-card-9"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="projects__btn-next btn-next" tabindex="0" role="button" aria-label="Листать назад" aria-disabled="false"></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contacts" id="contacts" aria-label="Контакты">
-        <div class="container">
-            <h2 class="contacts__header headers2">Контакты</h2>
-        </div>
-        <div class="contacts__container_absolute">
-            <div class="contacts__form-block">
-                <h3 class="contacts__header-address" aria-label="Здание">Шоурум №4</h3>
-                <p class="contacts__address main-text">Леонтьевский переулок, дом 5, строение 1</p>
-                <h4 class="contacts__header-4">Заказать обратный звонок</h4>
-                <form action="https://postman-echo.com/post" class="contacts__form" id="contacts__form" method="POST" aria-label="Форма Заказать обратный звонок">
-                    <input type="text" name="name" placeholder="Имя*" id="contacts__name-field" 
-                    class="contacts__input-field" data-validate-field="name" aria-label="Имя">
-                    <input type="tel" name="phone" placeholder="Телефон*" id="contacts__phone-field" 
-                    class="contacts__input-field" data-validate-field="phone" data-inputmask="'mask': '+7(999) 999-99-99'" aria-label="Номер телефона">
-                    <button type="submit" class="button__all button__medium contacts__submit">
-                        Заказать<span class="button__wrapper" aria-disabled="true"></span>
-                    </button>
-                </form>
-                <h4 class="contacts__header-4">Связаться в один клик</h4>
-                <a class="contacts__btn-round" aria-label="Ссылка на Whatsapp" id="contacts__btn-whatsapp" href="https://wa.me/79200000000?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!%20%F0%9F%91%8B"></a>
-                <a class="contacts__btn-round" aria-label="Ссылка на Telegram" id="contacts__btn-telegram" href="http://t.me/username"></a>
-            </div>
-        </div>
-
-        <div class="contacts__bottom-block">
-            <div class="contacts__left-block"></div>
-            <div class="contacts__map-block" id="contacts__map-block"></div>
-        </div>
-
-    </section>
+                            <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" tabindex="0">
+                                <img src="img/pictures/8_pic.png" alt="" class="gallery__slide-img">
+                            </button>
+                            <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" tabindex="0">
+                                <img src="img/pictures/9_pic.png" alt="" class="gallery__slide-img">
+                            </button>
+                            <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" tabindex="0">
+                                <img src="img/pictures/10_pic.png" alt="" class="gallery__slide-img">
+                            </button>
+                            <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" tabindex="0">
+                                <img src="img/pictures/11_pic.png" alt="" class="gallery__slide-img">
+                            </button>
+                            <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" tabindex="0">
+                                <img src="img/pictures/12_pic.png" alt="" class="gallery__slide-img">
+                            </button>
+                            <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" tabindex="0">
+                                <img src="img/pictures/13_pic.png" alt="" class="gallery__slide-img">
+                            </button>
+                            <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" tabindex="0">
+                                <img src="img/pictures/14_pic.png" alt="" class="gallery__slide-img">
+                            </button>
+                            <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" tabindex="0">
+                                <img src="img/pictures/15_pic.png" alt="" class="gallery__slide-img">
+                            </button>
+                            <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" tabindex="0">
+                                <img src="img/pictures/16_pic.png" alt="" class="gallery__slide-img">
+                            </button>
+                            <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" tabindex="0">
+                                <img src="img/pictures/17_pic.png" alt="" class="gallery__slide-img">
+                            </button>
+                            <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" tabindex="0">
+                                <img src="img/pictures/18_pic.png" alt="" class="gallery__slide-img">
+                            </button>
+                            <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" tabindex="0">
+                                <img src="img/pictures/19_pic.png" alt="" class="gallery__slide-img">
+                            </button>
+                            <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" tabindex="0">
+                                <img src="img/pictures/20_pic.png" alt="" class="gallery__slide-img">
+                            </button>
+                            <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" tabindex="0">
+                                <img src="img/pictures/21_pic.png" alt="" class="gallery__slide-img">
+                            </button>
+                            <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" tabindex="0">
+                                <img src="img/pictures/22_pic.png" alt="" class="gallery__slide-img">
+                            </button>
+                            <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" tabindex="0">
+                                <img src="img/pictures/23_pic.png" alt="" class="gallery__slide-img">
+                            </button>
+                            <button aria-label="Увеличить изображение" class="swiper-slide gallery__slide" tabindex="0">
+                                <img src="img/pictures/24_pic.png" alt="" class="gallery__slide-img">
+                            </button>
+	                    </div>
+	                </div>
+	            </div>
+	            <p class="gallery__hint" role="note">
+	                Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="">авторизуйтесь,</a> либо воспользуйтесь лицензией.
+	            </p>
+	        </div>
+	    </section>
+	
+	    <section class="catalog" id="catalog" aria-label="Каталог">
+	        <div class="container">
+	            <h2 class="catalog__header headers2">Каталог</h2>
+	            <ul class="catalog__flags-block" aria-label="Выбор страны">
+	                <li>
+	                    <button aria-label="Франция" class="catalog__flag-button" id="catalog__flag-button-1">
+	                    </button>
+	                </li>
+	                <li>
+	                    <button aria-label="Германия" class="catalog__flag-button" id="catalog__flag-button-2">
+	                    </button>
+	                </li>
+	                <li>
+	                    <button aria-label="Италия" class="catalog__flag-button catalog__flag-button_active" id="catalog__flag-button-3">
+	                    </button>
+	                </li>
+	                <li>
+	                    <button aria-label="Россия" class="catalog__flag-button" id="catalog__flag-button-4">
+	                    </button>
+	                </li>
+	                <li>
+	                    <button aria-label="Бельгия" class="catalog__flag-button" id="catalog__flag-button-5">
+	                    </button>
+	                </li>
+	            </ul>
+	            <p class="catalog__top-text main-text">
+	                Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, 
+	                будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить 
+	                традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены 
+	                на независимые элементы. 
+	            </p>
+	            <div class="catalog__authors-block">
+	                <div class="catalog__authors-left">
+	                    <div class="catalog__author-descr" id="artist-unknown">
+	                        <img class="catalog__author-img" src="img/Artist_none.jpg" alt="Неизвестный художник">
+	                        <h3 class="catalog__author-name" aria-label="Художник">Что мы о нем знаем?</h3>
+	                        <p class="catalog__author-bio main-text">
+	                            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+	                        </p>
+	                        <p class="catalog__author-link-gallery main-text">
+	                            <a href="#gallery">В галерею</a>
+	                        </p>
+	                    </div>
+	                    <div class="catalog__author-descr catalog__author-active" id="artist-Italy-1-info">
+	                        <img class="catalog__author-img" src="img/Artist.jpg" alt="Доменико Гирландайо">
+	                        <h3 class="catalog__author-name" aria-label="Художник">Доменико Гирландайо</h3>
+	                        <span class="catalog__author-birth">2 июня 1448 — 11 января 1494.</span>
+	                        <p class="catalog__author-bio main-text">
+	                            Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. 
+	                            Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, 
+	                            в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные 
+	                            граждане Флоренции в костюмах того времени).
+	                        </p>
+	                    </div>
+	                    <div class="catalog__author-descr" id="artist-Italy-2-info">
+	                        <img class="catalog__author-img" src="img/Artist_Italy_2.jpg" alt="Тинторетто Якопо">
+	                        <h3 class="catalog__author-name" aria-label="Художник">Тинторетто Якопо</h3>
+	                        <span class="catalog__author-birth">29 сентября 1518 – 31 мая 1594</span>
+	                        <p class="catalog__author-bio main-text">
+	                            Итальянский живописец; наряду с Джованни Беллини, Джорджоне, Тицианом и Веронезе является одним из крупнейших художников, представителей венецианской школы. 
+	                            Был сыном красильщика шелка, отсюда прозвище «Тинторетто» (маленький красильщик). Еще в детстве пристрастился к рисованию углем и пользовался красками отца 
+	                            для своих живописных опытов на стене дома. Первый биограф художника Ридольфи сообщает о детстве художника: «чтобы лучше изучить приемы наложения красок, 
+	                            Тинторетто бегал всюду, где что-нибудь окрашивали и расписывали, и часто принимал участие в работах маляров».
+	                        </p>
+	                    </div>
+	                    <div class="catalog__author-descr" id="artist-Italy-3-info">
+	                        <img class="catalog__author-img" src="img/Artist_Italy_3.jpg" alt="Джованни Баттиста Тьеполо">
+	                        <h3 class="catalog__author-name" aria-label="Художник">Джованни Баттиста Тьеполо</h3>
+	                        <span class="catalog__author-birth">5 марта 1696 — 27 марта 1770</span>
+	                        <p class="catalog__author-bio main-text">
+	                            Крупнейший художник итальянского рококо, мастер фресок и гравюр, последний великий представитель венецианской школы.
+	                        </p>
+	                    </div>
+	                    <div class="catalog__author-descr" id="artist-Italy-4-info">
+	                        <img class="catalog__author-img" src="img/Artist_Italy_4.jpg" alt="Джино Северини">
+	                        <h3 class="catalog__author-name" aria-label="Художник">Джино Северини</h3>
+	                        <span class="catalog__author-birth">7 апреля 1883 — 26 февраля 1966</span>
+	                        <p class="catalog__author-bio main-text">
+	                            Итальянский художник, график и скульптор. Северини известен в первую очередь как представитель футуризма и кубизма в искусстве. 
+	                            Учился живописи и рисунку в Риме, где в 1900 году познакомился с Джакомо Балла, у которого перенял дивизионистическую технику рисунка. 
+	                            В этой манере выполнены в первую очередь полотна, созданные Северини после его переезда в Париж в 1906 году. 
+	                            В Париже Северини поддерживал контакты с А. Модильяни, Х. Грисом, Ж. Браком и П. Пикассо, увлёкся теорией аналитического кубизма.
+	                        </p>
+	                    </div>
+	
+	                    <div class="catalog__author-descr" id="artist-France-1-info">
+	                        <img class="catalog__author-img" src="img/Artist_France_1.jpg" alt="Пьер Огюст Ренуар">
+	                        <h3 class="catalog__author-name" aria-label="Художник">Пьер Огюст Ренуар</h3>
+	                        <span class="catalog__author-birth">25 февраля 1841 — 3 декабря 1919</span>
+	                        <p class="catalog__author-bio main-text">
+	                            Французский живописец, график и скульптор, один из основных представителей импрессионизма. Известен, в первую очередь, как мастер светского 
+	                            портрета, не лишённого сентиментальности. Ренуар первым из импрессионистов снискал успех у состоятельных парижан. 
+	                            В середине 1880-х гг. он фактически порвал с импрессионизмом, вернувшись к линейности классицизма, к «энгризму». Отец знаменитого режиссёра Жана Ренуара.
+	                        </p>
+	                    </div>
+	                    <div class="catalog__author-descr" id="artist-France-2-info">
+	                        <img class="catalog__author-img" src="img/Artist_France_2.jpg" alt="Поль Сезанн">
+	                        <h3 class="catalog__author-name" aria-label="Художник">Поль Сезанн</h3>
+	                        <span class="catalog__author-birth">1839—1906</span>
+	                        <p class="catalog__author-bio main-text">
+	                            Французский живописец, яркий представитель постимпрессионизма. Художественное наследие Сезанна составляет более 800 работ маслом, не считая акварелей и других произведений. 
+	                            Никто не может подсчитать количества работ, уничтоженных, как несовершенные, самим художником за годы своего долгого творческого пути. 
+	                            В парижском осеннем Салоне 1904 года целый зал был отведен для демонстрации картин Сезанна. Эта выставка стала первым действительным успехом, более того — триумфом художника.
+	                        </p>
+	                    </div>
+	                    <div class="catalog__author-descr" id="artist-France-3-info">
+	                        <img class="catalog__author-img" src="img/Artist_France_3.jpg" alt="Пабло Пикассо">
+	                        <h3 class="catalog__author-name" aria-label="Художник">Пабло Пикассо</h3>
+	                        <span class="catalog__author-birth">25 октября 1881 — 8 апреля 1973</span>
+	                        <p class="catalog__author-bio main-text">
+	                            Испанский и французский художник, скульптор, график, театральный художник, керамист и дизайнер.
+	                            Основоположник кубизма (совместно с Жоржем Браком и Хуаном Грисом), в котором трёхмерное тело в оригинальной манере изображалось как ряд совмещённых воедино плоскостей. 
+	                            Пикассо много работал как график, скульптор, керамист и т. д. Вызвал к жизни массу подражателей и оказал исключительное влияние на развитие изобразительного искусства в XX веке. 
+	                            Согласно оценке Музея современного искусства (Нью-Йорк), Пикассо за свою жизнь создал около 20 тысяч работ.
+	                        </p>
+	                    </div>
+	
+	                    <div class="catalog__author-descr" id="artist-Russia-1-info">
+	                        <img class="catalog__author-img" src="img/Artist_Russia_1.jpg" alt="Андрей Рублев">
+	                        <h3 class="catalog__author-name" aria-label="Художник">Андрей Рублев</h3>
+	                        <span class="catalog__author-birth">около 1360 - 29 января 1430</span>
+	                        <p class="catalog__author-bio main-text">
+	                            Русский иконописец московской школы иконописи, книжной и монументальной живописи XV века. Канонизирован Русской православной церковью в лике преподобных. 
+	                            На формирование мировоззрения Рублёва большое влияние оказала атмосфера культурного подъёма 2-й половины XIV — начала XV века, для которого характерен 
+	                            глубокий интерес к нравственным и духовным проблемам. В своих произведениях в рамках средневековой иконографии Рублёв воплотил новое, возвышенное понимание 
+	                            духовной красоты и нравственной силы человека. Творчество Рублёва является одной из вершин русской и мировой культуры. 
+	                            В 1405 году Андрей Рублёв вместе с Феофаном Греком и Прохором из Городца расписывал стены Благовещенского собора в Московском Кремле.
+	                        </p>
+	                    </div>
+	                    <div class="catalog__author-descr" id="artist-Russia-2-info">
+	                        <img class="catalog__author-img" src="img/Artist_Russia_2.jpg" alt="Никитин Иван">
+	                        <h3 class="catalog__author-name" aria-label="Художник">Никитин Иван</h3>
+	                        <span class="catalog__author-birth">около 1690 — не ранее 1742</span>
+	                        <p class="catalog__author-bio main-text">
+	                            Русский живописец-портретист, основатель русской портретной школы XVIII века, один из первых получивший европейское образование. 
+	                            Родился в Москве в семье священника. Был певчим в патриаршем хоре, потом учителем рисования и «цифири», то есть арифметики, в артиллерийской школе. 
+	                        </p>
+	                    </div>
+	                    <div class="catalog__author-descr" id="artist-Russia-3-info">
+	                        <img class="catalog__author-img" src="img/Artist_Russia_3.jpg" alt="Виктор Васнецов">
+	                        <h3 class="catalog__author-name" aria-label="Художник">Виктор Васнецов</h3>
+	                        <span class="catalog__author-birth">1848 - 1926</span>
+	                        <p class="catalog__author-bio main-text">
+	                            Русский художник-живописец и архитектор, мастер исторической и фольклорной живописи. Васнецов является основоположником «неорусского стиля», 
+	                            преобразованного из исторического жанра и романтических тенденций, связанных с фольклором и символизмом. Творчество художника сыграло важную роль в 
+	                            развитии российского изобразительного искусства от эпохи передвижничества к стилю модерн. Действительный статский советник. 
+	                            Младший брат — художник Аполлинарий Васнецов.
+	                        </p>
+	                    </div>
+	                    <div class="catalog__author-descr" id="artist-Russia-4-info">
+	                        <img class="catalog__author-img" src="img/Artist_Russia_4.jpg" alt="Казимир Малевич">
+	                        <h3 class="catalog__author-name" aria-label="Художник">Казимир Малевич</h3>
+	                        <span class="catalog__author-birth">23 февраля 1879 — 15 мая 1935</span>
+	                        <p class="catalog__author-bio main-text">
+	                            Российский и советский художник-авангардист польского происхождения, педагог, теоретик искусства, философ. 
+	                            Основоположник супрематизма — одного из крупнейших направлений абстракционизма.
+	                        </p>
+	                    </div>
+	
+	                    <div class="catalog__author-descr" id="artist-Germany-1-info">
+	                        <img class="catalog__author-img" src="img/Artist_Germany_1.jpg" alt="Альбрехт Дюрер">
+	                        <h3 class="catalog__author-name" aria-label="Художник">Альбрехт Дюрер</h3>
+	                        <span class="catalog__author-birth">21 мая 1471 — 6 апреля 1528</span>
+	                        <p class="catalog__author-bio main-text">
+	                            Немецкий живописец, гравёр и график, один из величайших мастеров западноевропейского Ренессанса. 
+	                            Признан крупнейшим европейским мастером ксилографии, поднявшим её на уровень настоящего искусства. 
+	                            Первый теоретик искусства среди североевропейских художников, автор практического руководства по изобразительному и 
+	                            декоративно-прикладному искусству на немецком языке, пропагандировавший необходимость разностороннего развития художников. 
+	                            Основоположник сравнительной антропометрии. Помимо перечисленного оставил заметный след в военно-инженерном деле разработкой теории фортификации. 
+	                            Первый из европейских художников, написавший автобиографию.
+	                        </p>
+	                    </div>
+	                    <div class="catalog__author-descr" id="artist-Germany-2-info">
+	                        <img class="catalog__author-img" src="img/Artist_Germany_2.jpg" alt="Каспар Давид Фридрих">
+	                        <h3 class="catalog__author-name" aria-label="Художник">Каспар Давид Фридрих</h3>
+	                        <span class="catalog__author-birth">5 сентября 1774 — 7 мая 1840</span>
+	                        <p class="catalog__author-bio main-text">
+	                            Немецкий художник эпохи романтизма, один из крупнейших представителей романтического направления в живописи Германии наряду с Филиппом Отто Рунге. 
+	                            Среди его последователей — классик норвежской живописи Юхан Кристиан Даль.
+	                        </p>
+	                    </div>
+	
+	                    <div class="catalog__author-descr" id="artist-Belgium-1-info">
+	                        <img class="catalog__author-img" src="img/Artist_Belgium_1.jpg" alt="Ян ван Эйк">
+	                        <h3 class="catalog__author-name" aria-label="Художник">Ян ван Эйк</h3>
+	                        <span class="catalog__author-birth">1390 — 1441</span>
+	                        <p class="catalog__author-bio main-text">
+	                            Ян ван Эйк – ключевая фигура Северного Возрождения, его основоположник.
+	                            Ван Эйк считался изобретателем масляных красок, хотя на самом деле он лишь усовершенствовал их. Однако благодаря ему масло получило всеобщее признание.
+	                            В течение 16 лет художник был придворным живописцем герцога Бургундского Филиппа Доброго, господина и вассала также связывала крепкая дружба, 
+	                            герцог принимал живое участие в судьбе художника, а ван Эйк стал посредником в женитьбе господина.
+	                        </p>
+	                    </div>
+	                    <div class="catalog__author-descr" id="artist-Belgium-2-info">
+	                        <img class="catalog__author-img" src="img/Artist_Belgium_2.jpg" alt="Питер Пауль Рубенс">
+	                        <h3 class="catalog__author-name" aria-label="Художник">Питер Пауль Рубенс</h3>
+	                        <span class="catalog__author-birth">28 июня 1577 — 30 мая 1640</span>
+	                        <p class="catalog__author-bio main-text">
+	                            Фламандский живописец, один из основоположников искусства барокко, дипломат, коллекционер. Творческое наследие Рубенса насчитывает около 3000 картин, 
+	                            значительная часть которых выполнена в сотрудничестве с учениками и коллегами, крупнейшим из которых был Антонис ван Дейк (1599—1641). 
+	                            Сохранилась обширная переписка Рубенса, преимущественно дипломатическая. Был возведён в дворянское достоинство испанским королём Филиппом IV (1624) 
+	                            и пожалован рыцарством английским королём Карлом I (1630) со включением геральдического льва в личный герб. 
+	                            С приобретением в 1635 году замка Стеен в Элевейте Рубенс получил титул сеньора.
+	                        </p>
+	                    </div>
+	                </div>
+	                <div class="catalog__authors-right">
+	                    <div class="catalog__dates-list" id="accordion">
+	                        <h3 class="flexbox catalog__dates-list-text" id="catalog__dates-list-text0">
+	                            <span class="catalog__dates-list-header">C 1400 по 1499 гг.</span> 
+	                            <button class="catalog__dates-list-btn" aria-label="Раскрыть"></button>
+	                        </h3>                 
+	                        <div class="catalog__names" id="catalog__names0">
+	                            <ul class="catalog__names-list">
+	                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Бенедетто ди Биндо</button></li>
+	                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Бергоньоне, Амброджо</button></li>
+	                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Биссоло, Франческо</button></li>
+	                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Больтраффио, Джованни</button></li>
+	                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Бонсиньори, Франческо</button></li>
+	                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Боттичини, Рафаэлло</button></li>
+	                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Брамантино</button></li>
+	                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Бреа, Людовико</button></li>
+	                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Бьяджо д’Антонио Туччи</button></li>
+	                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Веккьетта</button></li>
+	                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Андреа Верроккьо</button></li>
+	                                
+	                                <li><button class="catalog__names-list-item catalog__Belgium" id="artist-Belgium-1">Ван Эйк, Ян</button></li>
+	                                <li><button class="catalog__names-list-item catalog__names-list-item_active catalog__Italy catalog__active-country"
+	                                    id="artist-Italy-1">Доменико Гирландайо</button></li>
+	                                <li><button class="catalog__names-list-item catalog__Russia" id="artist-Russia-1">Рублев, Андрей</button></li>
+	                                
+	                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Беноццо Гоццоли</button></li>
+	                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Граначчи, Франческо</button></li>
+	                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Грегорио ди Чекко</button></li>
+	                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Джованни да Удине</button></li>
+	                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Джованни ди Паоло</button></li>
+	                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Джорджоне</button></li>
+	                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Парентино, Бернардо</button></li>
+	                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Пинтуриккьо</button></li>
+	                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Пезеллино</button></li>
+	                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Перуцци, Бальдассаре</button></li>
+	                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Пизанелло</button></li>
+	                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country">Пьетро Перуджино</button></li>
+	                            </ul>
+	                            <div class="catalog__names-empty">
+	                                <div class="catalog__names-empty-img"></div>
+	                                <div class="catalog__names-empty-textblock">
+	                                    <h4 class="catalog__names-empty-header">Здесь пока пусто</h4>
+	                                    <p class="catalog__names-empty-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+	                                    <a href="#gallery" class="catalog__names-empty-link">В галерею</a>
+	                                </div>
+	                            </div>
+	                        </div>
+	
+	                        <h3 class="flexbox catalog__dates-list-text" id="catalog__dates-list-text1">
+	                            <span class="catalog__dates-list-header">C 1500 по 1599 гг.</span> 
+	                            <button class="catalog__dates-list-btn" aria-label="Раскрыть"></button>
+	                        </h3>
+	                        <div class="catalog__names" id="catalog__names1">
+	                            <ul class="catalog__names-list" >
+	                                <li><button class="catalog__names-list-item catalog__Germany" id="artist-Germany-1">Дюрер, Альбрехт</button></li>
+	                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country" id="artist-Italy-2">Тинторетто</button></li>
+	                            </ul>
+	                            <div class="catalog__names-empty">
+	                                <div class="catalog__names-empty-img"></div>
+	                                <div class="catalog__names-empty-textblock">
+	                                    <h4 class="catalog__names-empty-header">Здесь пока пусто</h4>
+	                                    <p class="catalog__names-empty-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+	                                    <a href="#gallery" class="catalog__names-empty-link">В галерею</a>
+	                                </div>
+	                            </div>
+	                        </div>
+	
+	
+	                        <h3 class="flexbox catalog__dates-list-text" id="catalog__dates-list-text2">
+	                            <span class="catalog__dates-list-header">C 1600 по 1699 гг.</span> 
+	                            <button class="catalog__dates-list-btn" aria-label="Раскрыть"></button>
+	                        </h3>                      
+	                        <div class="catalog__names" id="catalog__names2">
+	                            <ul class="catalog__names-list">
+	                                <li><button class="catalog__names-list-item catalog__Belgium" id="artist-Belgium-2">Рубенс, Питер Пауль</button></li>
+	                            </ul>
+	                            <div class="catalog__names-empty">
+	                                <div class="catalog__names-empty-img"></div>
+	                                <div class="catalog__names-empty-textblock">
+	                                    <h4 class="catalog__names-empty-header">Здесь пока пусто</h4>
+	                                    <p class="catalog__names-empty-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+	                                    <a href="#gallery" class="catalog__names-empty-link">В галерею</a>
+	                                </div>
+	                            </div>
+	                        </div>
+	
+	                        <h3 class="flexbox catalog__dates-list-text" id="catalog__dates-list-text3">
+	                            <span class="catalog__dates-list-header">C 1700 по 1799 гг.</span>
+	                            <button class="catalog__dates-list-btn" aria-label="Раскрыть"></button>
+	                        </h3>
+	                        <div class="catalog__names" id="catalog__names3">
+	                            <ul class="catalog__names-list">
+	                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country" id="artist-Italy-3">Тьеполо</button></li>
+	                                <li><button class="catalog__names-list-item catalog__Russia" id="artist-Russia-2">Никитин, Иван</button></li>
+	                            </ul>
+	                            <div class="catalog__names-empty">
+	                                <div class="catalog__names-empty-img"></div>
+	                                <div class="catalog__names-empty-textblock">
+	                                    <h4 class="catalog__names-empty-header">Здесь пока пусто</h4>
+	                                    <p class="catalog__names-empty-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+	                                    <a href="#gallery" class="catalog__names-empty-link">В галерею</a>
+	                                </div>
+	                            </div>
+	                        </div>
+	
+	                        <h3 class="flexbox catalog__dates-list-text" id="catalog__dates-list-text4">
+	                            <span class="catalog__dates-list-header">C 1800 по 1899 гг.</span>
+	                            <button class="catalog__dates-list-btn" aria-label="Раскрыть"></button>
+	                        </h3>
+	                        <div class="catalog__names" id="catalog__names4">
+	                            <ul class="catalog__names-list">
+	                                <li><button class="catalog__names-list-item catalog__Russia" id="artist-Russia-3">Васнецов, Виктор</button></li>
+	                                <li><button class="catalog__names-list-item catalog__France" id="artist-France-1">Ренуар, Пьер Огюст</button></li>
+	                                <li><button class="catalog__names-list-item catalog__France" id="artist-France-2">Сезанн, Поль</button></li>
+	                                <li><button class="catalog__names-list-item catalog__Germany" id="artist-Germany-2">Фридрих, Каспар Давид</button></li>
+	                            </ul>
+	                            <div class="catalog__names-empty">
+	                                <div class="catalog__names-empty-img"></div>
+	                                <div class="catalog__names-empty-textblock">
+	                                    <h4 class="catalog__names-empty-header">Здесь пока пусто</h4>
+	                                    <p class="catalog__names-empty-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+	                                    <a href="#gallery" class="catalog__names-empty-link">В галерею</a>
+	                                </div>
+	                            </div>
+	                        </div>
+	
+	
+	                        <h3 class="flexbox catalog__dates-list-text" id="catalog__dates-list-text5">
+	                            <span class="catalog__dates-list-header">C 1900 по 1999 гг.</span> 
+	                            <button class="catalog__dates-list-btn" aria-label="Раскрыть"></button>
+	                        </h3>     
+	                        <div class="catalog__names" id="catalog__names5">
+	                            <ul class="catalog__names-list">
+	                                <li><button class="catalog__names-list-item catalog__Russia" id="artist-Russia-4">Малевич, Казимир</button></li>
+	                                <li><button class="catalog__names-list-item catalog__Italy catalog__active-country" id="artist-Italy-4">Северини, Джино</button></li>
+	                                <li><button class="catalog__names-list-item catalog__France" id="artist-France-3">Пикассо, Пабло</button></li>
+	                            </ul>
+	                            <div class="catalog__names-empty">
+	                                <div class="catalog__names-empty-img"></div>
+	                                <div class="catalog__names-empty-textblock">
+	                                    <h4 class="catalog__names-empty-header">Здесь пока пусто</h4>
+	                                    <p class="catalog__names-empty-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+	                                    <a href="#gallery" class="catalog__names-empty-link">В галерею</a>
+	                                </div>
+	                            </div>
+	                        </div>
+	
+	                        <h3 class="flexbox catalog__dates-list-text" id="catalog__dates-list-text6">
+	                            <span class="catalog__dates-list-header">C 2000 г.</span>
+	                            <button class="catalog__dates-list-btn" aria-label="Раскрыть"></button>
+	                        </h3>
+	                        <div class="catalog__names" id="catalog__names6">
+	                            <ul class="catalog__names-list">
+	
+	                            </ul>
+	                            <div class="catalog__names-empty">
+	                                <div class="catalog__names-empty-img"></div>
+	                                <div class="catalog__names-empty-textblock">
+	                                    <h4 class="catalog__names-empty-header">Здесь пока пусто</h4>
+	                                    <p class="catalog__names-empty-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+	                                    <a href="#gallery" class="catalog__names-empty-link">В галерею</a>
+	                                </div>
+	                            </div>
+	                        </div>    
+	
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </section>
+	    <section class="events" id="events" aria-label="События">
+	        <div class="container">
+	            <h2 class="events__header headers2">
+	                События
+	            </h2>
+	            <ul class="events__event-list flexbox events__event-list_hide-768" id="events__event-list">
+	                <li class="events__card events__card-700px_visible" id="events__card-1">
+	                    <img src="img/Event_1.png" class="events__card-img" alt="">
+	                    <p class="events__card-text-1">
+	                        Музей им. Щусева
+						</p>
+						<p class="events__card-text-1 events__card-text-date">
+	                        с 20 марта по 30 апреля
+	                    </p>
+	                    <h3 class="events__card-header" aria-label="Название события">Книжная гравюра в живом восприятии</h3>
+	                    <p class="events__card-text-2 main-text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, 
+	                        которую продолжили его брат Давид и сын Ридольфо.
+	                    </p>
+	                    <a href="" class="events__card-link">Подробнее</a>
+	                </li>
+	                <li class="events__card" id="events__card-2">
+	                    <img src="img/Event_2.png" class="events__card-img" alt="">
+	                    <p class="events__card-text-1">
+	                        ММОМА
+						</p>
+						<p class="events__card-text-1 events__card-text-date">
+	                        24 марта 19:00
+	                    </p>
+	                    <h3 class="events__card-header" aria-label="Название события">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+	                    <p class="events__card-text-2 main-text">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.
+	                    </p>
+	                    <a href="" class="events__card-link">Подробнее</a>
+	                </li>
+	                <li class="events__card" id="events__card-3">
+	                    <img src="img/Event_3.png" class="events__card-img" alt="">
+	                    <p class="events__card-text-1">
+	                        Еврейский музей
+						</p>
+						<p class="events__card-text-1 events__card-text-date">
+	                        с 31 марта по 21 апреля
+	                    </p>
+	                    <h3 class="events__card-header" aria-label="Название события">Выставка «Формация 2020»</h3>
+	                    <p class="events__card-text-2 main-text">Идейные соображения высшего порядка, а также современная методология 
+	                        разработки играет важную роль в формировании глубокомысленных рассуждений.
+	                    </p>
+	                    <a href="" class="events__card-link">Подробнее</a>
+	                </li>
+	                <li class="events__card events__card_hidden" id="events__card-4">
+	                    <img src="img/Event_4.png" class="events__card-img" alt="">
+	                    <p class="events__card-text-1">
+	                        Третьяковка на Крымском валу
+						</p>
+						<p class="events__card-text-1 events__card-text-date">
+	                        с 30 марта по 30 апреля
+	                    </p>
+	                    <h3 class="events__card-header" aria-label="Название события">XXIV Международная биеннале молодого искусства</h3>
+	                    <p class="events__card-text-2 main-text">Внезапно, реплицированные с зарубежных источников, современные исследования.
+	                    </p>
+	                    <a href="" class="events__card-link">Подробнее</a>
+	                </li>
+	                <li class="events__card events__card_hidden" id="events__card-5">
+	                    <img src="img/Event_5.png" class="events__card-img" alt="">
+	                    <p class="events__card-text-1">
+	                        ММАМ
+						</p>
+						<p class="events__card-text-1 events__card-text-date">
+	                        с 8 апреля по 20 мая
+	                    </p>
+	                    <h3 class="events__card-header" aria-label="Название события">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+	                    <p class="events__card-text-2 main-text">Один из ведущих флорентийских художников Кватроченто, основатель художественной 
+	                        династии, которую продолжили его брат Давид и сын Ридольфо.
+	                    </p>
+	                    <a href="" class="events__card-link">Подробнее</a>
+	                </li>
+	            </ul>
+	
+	            <button class="events__btn button-medium button-all">
+	                Все события
+	            </button>
+	
+	            <div class="events__pages-block" role="radiogroup" aria-label="Переключатель событий">
+	                <button aria-label="Событие 1" class="events__pages-button events__pages-button_active" tabindex="0" id="events__pages-button-1"></button>
+	                <button aria-label="Событие 2" class="events__pages-button" id="events__pages-button-2" tabindex="0"></button>
+	                <button aria-label="Событие 3" class="events__pages-button" id="events__pages-button-3" tabindex="0"></button>
+	                <button aria-label="Событие 4" class="events__pages-button" id="events__pages-button-4" tabindex="0"></button>
+	                <button aria-label="Событие 5" class="events__pages-button" id="events__pages-button-5" tabindex="0"></button>
+	            </div>
+	        </div>
+	
+	    </section>
+	    <section class="editions" id="editions">
+	        <div class="container flexbox editions__container">
+	            <div class="editions__left">
+	                <h2 class="editions__header headers2">Издания</h2>            
+	                <p class="editions__caption" id="editions__caption-categories">Категории</p>
+	                <ul class="editions__category-list" aria-label="Фильтр по категориям">
+	                    
+	                    <li><label class="editions__category-label">
+	                            <input type="checkbox" name="Bestsellers" class="editions__checkbox">
+	                            <span class="editions__custom-checkbox" aria-disabled="true"></span>
+	                            <span class="editions__category-name">Бестселлеры</span>
+	                    </label></li>
+	                    
+	                    <li><label class="editions__category-label">
+	                            <input type="checkbox" name="Art" class="editions__checkbox">
+	                            <span class="editions__custom-checkbox" aria-disabled="true"></span>
+	                            <span class="editions__category-name">Искусство</span>
+	                    </label></li>
+	
+	                    <li><label class="editions__category-label">
+	                            <input type="checkbox" name="Architecture" class="editions__checkbox">
+	                            <span class="editions__custom-checkbox" aria-disabled="true"></span>
+	                            <span class="editions__category-name">Архитектура</span>
+	                    </label></li>
+	
+	                    <li><label class="editions__category-label">
+	                            <input type="checkbox" name="Design" class="editions__checkbox" checked>
+	                            <span class="editions__custom-checkbox" aria-disabled="true"></span>
+	                            <span class="editions__category-name">Дизайн</span>
+	                    </label></li>
+	                
+	                    <li><label class="editions__category-label">
+	                            <input type="checkbox" name="Fashion" class="editions__checkbox">
+	                            <span class="editions__custom-checkbox" aria-disabled="true"></span>
+	                            <span class="editions__category-name">Мода</span>
+	                    </label></li>
+	
+	                    <li><label class="editions__category-label">
+	                            <input type="checkbox" name="Children" class="editions__checkbox">
+	                            <span class="editions__custom-checkbox" aria-disabled="true"></span>
+	                            <span class="editions__category-name">Детям</span>
+	                    </label></li>
+	
+	                    <li><label class="editions__category-label">
+	                            <input type="checkbox" name="Fiction" class="editions__checkbox">
+	                            <span class="editions__custom-checkbox" aria-disabled="true"></span>
+	                            <span class="editions__category-name">Художественная литература</span>
+	                    </label></li>
+	                
+	                    <li><label class="editions__category-label">
+	                            <input type="checkbox" name="Journalism" class="editions__checkbox">
+	                            <span class="editions__custom-checkbox" aria-disabled="true"></span>
+	                            <span class="editions__category-name">Публицистика</span>
+	                    </label></li>
+	
+	                    <li><label class="editions__category-label">
+	                            <input type="checkbox" name="Travel guides" class="editions__checkbox">
+	                            <span class="editions__custom-checkbox" aria-disabled="true"></span>
+	                            <span class="editions__category-name">Путеводители</span>
+	                    </label></li>
+	
+	                    <li><label class="editions__category-label">
+	                            <input type="checkbox" name="Philosophy" class="editions__checkbox">
+	                            <span class="editions__custom-checkbox" aria-disabled="true"></span>
+	                            <span class="editions__category-name">Философия</span>
+	                    </label></li>
+	            
+	                    <li><label class="editions__category-label">
+	                            <input type="checkbox" name="Educational literature" class="editions__checkbox">
+	                            <span class="editions__custom-checkbox" aria-disabled="true"></span>
+	                            <span class="editions__category-name">Учебная литература</span>
+	                    </label></li>
+	
+	                    <li><label class="editions__category-label">
+	                            <input type="checkbox" name="Magazines and newspapers" class="editions__checkbox">
+	                            <span class="editions__custom-checkbox" aria-disabled="true"></span>
+	                            <span class="editions__category-name">Журналы и газеты</span>
+	                    </label></li>
+	
+	                </ul>
+	                <p class="editions__caption editions__caption-price">Цена</p>
+	                <div class="editions__prices">
+	                    <span class="editions__prices-word">От</span> 
+	                    <input type="number" placeholder="50" class="editions__prices-input" id="editions__prices-input-min" aria-label="Минимальная цена" >
+	                    <span class="editions__prices-word">до</span>
+	                    <input type="number" placeholder="25000" class="editions__prices-input" id="editions__prices-input-max"  aria-label="Максимальная цена" >
+	                    руб.
+	                </div>
+	            </div>
+	
+	            <div class="editions__right">
+	
+	                <div class="editions__swiper-container">
+	                    <div class="editions__buttons-block">
+	                        <div class="editions__btn-prev btn-prev" tabindex="0" role="button" aria-label="Предыдущие книги" aria-disabled="false"></div>
+	                        <div class="editions__pagination"></div>
+	                        <div class="editions__btn-next btn-next" tabindex="0" role="button" aria-label="Следующие книги" aria-disabled="false"></div>
+	                    </div>
+	                    <!-- Additional required wrapper -->
+	                    <div class="swiper-wrapper editions__wrapper" id="editions__wrapper">
+	                        <!-- Slides -->
+	                        <div class="swiper-slide editions__slide">
+	                            <img src="img/Book_1.jpg" alt="" class="editions__slide-img">
+	                            <div class="editions__slide-textblock flexbox">
+	                                <div class="editions__slide-book">
+	                                    <p class="editions__slide-bookname">Искусство цвета</p>
+	                                    <p class="editions__slide-author">Иттен, Иоханнес</p>
+	                                </div>
+	                                <p class="editions__slide-price">620 руб</p>
+	                            </div>
+	                            <button class="editions__btn button-small button-all">
+	                                Заказать
+	                            </button>
+	                        </div>
+	
+	                        <div class="swiper-slide editions__slide">
+	                            <img src="img/Book_2.jpg" alt="" class="editions__slide-img">
+	                            <div class="editions__slide-textblock flexbox">
+	                                <div class="editions__slide-book">
+	                                    <p class="editions__slide-bookname">Типографика
+	                                         </p>
+	                                    <p class="editions__slide-author">Рудер, Эмиль</p>
+	                                </div>
+	                                <p class="editions__slide-price">2 450 руб</p>
+	                            </div>
+	                            <button class="editions__btn button-small button-all">
+	                                Заказать
+	                            </button>
+	                        </div>
+	
+	                        <div class="swiper-slide editions__slide">
+	                            <img src="img/Book_3.jpg" alt="" class="editions__slide-img">
+	                            <div class="editions__slide-textblock flexbox">
+	                                <div class="editions__slide-book">
+	                                    <p class="editions__slide-bookname">Книга про буквы
+	                                         </p>
+	                                    <p class="editions__slide-author">Гордон, Юрий  </p>
+	                                </div>
+	                                <p class="editions__slide-price">2 200 руб</p>
+	                            </div>
+	                            <button class="editions__btn button-small button-all">
+	                                Заказать
+	                            </button>
+	                        </div>
+	
+	                        <div class="swiper-slide editions__slide">
+	                            <img src="img/Book_4.jpg" alt="" class="editions__slide-img">
+	                            <div class="editions__slide-textblock flexbox">
+	                                <div class="editions__slide-book">
+	                                    <p class="editions__slide-bookname">
+	                                        Николай Ильин
+	                                         </p>
+	                                    <p class="editions__slide-author"> Кричевский, Владимир  </p>
+	                                </div>
+	                                <p class="editions__slide-price">1 100 руб</p>
+	                            </div>
+	                            <button class="editions__btn button-small button-all">
+	                                Заказать
+	                            </button>
+	                        </div>
+	
+	                        <div class="swiper-slide editions__slide">
+	                            <img src="img/Book_5.jpg" alt="" class="editions__slide-img">
+	                            <div class="editions__slide-textblock flexbox">
+	                                <div class="editions__slide-book">
+	                                    <p class="editions__slide-bookname">
+	                                        Модульные сетки в граф...
+	                                         </p>
+	                                    <p class="editions__slide-author">Мюллер-Брокманн, Йозеф </p>
+	                                </div>
+	                                <p class="editions__slide-price">1 450 руб</p>
+	                            </div>
+	                            <button class="editions__btn button-small button-all">
+	                                Заказать
+	                            </button>
+	                        </div>
+	
+	                        <div class="swiper-slide editions__slide">
+	                            <img src="img/Book_6.jpg" alt="" class="editions__slide-img">
+	                            <div class="editions__slide-textblock flexbox">
+	                                <div class="editions__slide-book">
+	                                    <p class="editions__slide-bookname">
+	                                        Эволюция графических ст...     
+	                                         </p>
+	                                    <p class="editions__slide-author"> Хеллер, Чваст </p>
+	                                </div>
+	                                <p class="editions__slide-price">3 200 руб</p>
+	                            </div>
+	                            <button class="editions__btn button-small button-all">
+	                                Заказать
+	                            </button>
+	                        </div>
+	
+	                        <div class="swiper-slide editions__slide">
+	                            <img src="img/Book_7.jpg" alt="" class="editions__slide-img">
+	                            <div class="editions__slide-textblock flexbox">
+	                                <div class="editions__slide-book">
+	                                    <p class="editions__slide-bookname">
+	                                        Искусство и визуальное в...
+	                                         </p>
+	                                    <p class="editions__slide-author">Арнхейм, Рудольф </p>
+	                                </div>
+	                                <p class="editions__slide-price">2 200 руб</p>
+	                            </div>
+	                            <button class="editions__btn button-small button-all">
+	                                Заказать
+	                            </button>
+	                        </div>
+	
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </section>
+	
+	    <section class="projects" id="projects" aria-label="Партнеры">
+	        <div class="container projects__container">
+	            <h2 class="projects__header headers2">Проекты</h2>
+	            <div class="projects__text main-text" role="article">
+	                Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует 
+	                необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной 
+	                неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское 
+	                <span class="tooltip" role="tooltip">
+	                    <span class="tooltip-marker" tabindex="0">i</span>
+	                    <span class="tooltip-popup">Пример современных тенденций - современная методология разработки </span>
+	                    <span class="tooltip-bottom"></span>
+	                </span>      
+	                обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия 
+	                представителей оппозиции могут быть рассмотрены 
+	                <span class="tooltip" role="tooltip">
+	                    <span class="tooltip-marker" tabindex="0">i</span>
+	                    <span class="tooltip-popup">Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции   </span>
+	                    <span class="tooltip-bottom"></span>
+	                </span> 
+	                исключительно в разрезе маркетинговых и финансовых 
+	                <span class="tooltip" role="tooltip">
+	                    <span class="tooltip-marker" tabindex="0">i</span>
+	                    <span class="tooltip-popup">В стремлении повысить качество </span>
+	                    <span class="tooltip-bottom"></span>
+	                </span> 
+	                предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, 
+	                в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. 
+	                Подробнее: <a href="" class="projects__link">blanchard-art.ru/projects/about</a>
+	            </div>
+	            
+	            <h3 class="projects__partners-header">Партнёры проектов:</h3>
+	            <div class="project__partners">
+	                <div class="projects__btn-prev btn-prev" tabindex="0" role="button" aria-label="Листать назад" aria-disabled="false"></div>
+	                <div class="projects__swiper-container flexbox">              
+	                    <div class="swiper-wrapper projects__wrapper">
+	                        <div class="swiper-slide projects__slide">
+	                            <a href="" class="projects__partner-card" id="projects__partner-card-1"></a>
+	                        </div>
+	                        <div class="swiper-slide projects__slide">
+	                            <a href="" class="projects__partner-card" id="projects__partner-card-2"></a>
+	                        </div>
+	                        <div class="swiper-slide projects__slide">
+	                            <a href="" class="projects__partner-card" id="projects__partner-card-3"></a>
+	                        </div>
+	                        <div class="swiper-slide projects__slide">
+	                            <a href="" class="projects__partner-card" id="projects__partner-card-4"></a>
+	                        </div>
+	                        <div class="swiper-slide projects__slide">
+	                            <a href="" class="projects__partner-card" id="projects__partner-card-5"></a>
+	                        </div>
+	                        <div class="swiper-slide projects__slide">
+	                            <a href="" class="projects__partner-card" id="projects__partner-card-6"></a>
+	                        </div>
+	                        <div class="swiper-slide projects__slide">
+	                            <a href="" class="projects__partner-card" id="projects__partner-card-7"></a>
+	                        </div>
+	                        <div class="swiper-slide projects__slide">
+	                            <a href="" class="projects__partner-card" id="projects__partner-card-8"></a>
+	                        </div>
+	                        <div class="swiper-slide projects__slide">
+	                            <a href="" class="projects__partner-card" id="projects__partner-card-9"></a>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="projects__btn-next btn-next" tabindex="0" role="button" aria-label="Листать назад" aria-disabled="false"></div>
+	            </div>
+	        </div>
+	    </section>
+	
+	    <section class="contacts" id="contacts" aria-label="Контакты">
+	        <div class="container">
+	            <h2 class="contacts__header headers2">Контакты</h2>
+	        </div>
+	        <div class="contacts__container_absolute">
+	            <div class="contacts__form-block">
+	                <h3 class="contacts__header-address" aria-label="Здание">Шоурум №4</h3>
+	                <p class="contacts__address main-text">Леонтьевский переулок, дом 5, строение 1</p>
+	                <h4 class="contacts__header-4">Заказать обратный звонок</h4>
+	                <form action="https://postman-echo.com/post" class="contacts__form" id="contacts__form" method="POST" aria-label="Форма Заказать обратный звонок">
+	                    <input type="text" name="name" placeholder="Имя*" id="contacts__name-field" 
+	                    class="contacts__input-field" data-validate-field="name" aria-label="Имя">
+	                    <input type="tel" name="phone" placeholder="Телефон*" id="contacts__phone-field" 
+	                    class="contacts__input-field" data-validate-field="phone" data-inputmask="'mask': '+7(999) 999-99-99'" aria-label="Номер телефона">
+	                    <button type="submit" class="button-all button-medium contacts__submit">
+	                        Заказать
+	                    </button>
+	                </form>
+	                <h4 class="contacts__header-4">Связаться в один клик</h4>
+	                <a class="contacts__btn-round" aria-label="Ссылка на Whatsapp" id="contacts__btn-whatsapp" href="https://wa.me/79200000000?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!%20%F0%9F%91%8B"></a>
+	                <a class="contacts__btn-round" aria-label="Ссылка на Telegram" id="contacts__btn-telegram" href="http://t.me/username"></a>
+	            </div>
+	        </div>
+	
+	        <div class="contacts__bottom-block">
+	            <div class="contacts__left-block"></div>
+	            <div class="contacts__map-block" id="contacts__map-block"></div>
+	        </div>
+	
+	    </section>
+    </main>
     
-    <section class="footer" aria-label="Подвал сайта">
+    <footer class="footer" aria-label="Подвал сайта">
         <div class="container flexbox">
             <a href="" class="footer__logo" aria-label="Логотип"></a>
             <div class="footer__link-block">
@@ -1020,7 +1070,7 @@
                 <a href="" class="footer__link" id="footer__link-fb" aria-label="Ссылка на Facebook"></a>
             </div>
         </div>
-    </section>
+    </footer>
 
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -1030,5 +1080,6 @@
     <script src="scripts/bindings/inputmask.binding.js"></script>
 
     <script src="scripts/myscript.js"></script>
+    <script src="scripts/focus-visible.js"></script>
 </body>
 </html>
