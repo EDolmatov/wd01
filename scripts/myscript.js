@@ -194,7 +194,6 @@ function displayDropdawn(dropdawnId, btnId) {
 
 //events
 function displayAllEvents() {
-    $('.events__card_hidden').removeClass('events__card_hidden');
     $('.events__btn').addClass('events__btn_hidden');
     $('#events__event-list').removeClass('events__event-list_hide-768');
 }
@@ -266,6 +265,10 @@ $('#events__pages-button-5').click(function(){
     pagesPickEvents('events__card-5',this.id);
 });
 
+$('.hero__btn').click(function(){
+    $('#contacts__map-block').get(0).scrollIntoView();
+});
+
 //Flags
 function resetActiveCountry() {
     $('.catalog__Italy,.catalog__France,.catalog__Russia,.catalog__Germany,.catalog__Belgium').removeClass('catalog__active-country');
@@ -295,36 +298,27 @@ function showFirstArtist() {
     $('#catalog__dates-list-text' + parentElemLastSimbol).click();
     firstArtist.click();    
 }
+function buttonClickFunc(countrySelect) {
+    resetActiveCountry();
+    $(countrySelect).addClass('catalog__active-country');
+    hideEmptyNamelists();
+    showFirstArtist();
+}
 
 $('#catalog__flag-button-1').click(function(){
-    resetActiveCountry();
-    $('.catalog__France').addClass('catalog__active-country');
-    hideEmptyNamelists();
-    showFirstArtist();
+    buttonClickFunc('.catalog__France');
 });
 $('#catalog__flag-button-2').click(function(){
-    resetActiveCountry();
-    $('.catalog__Germany').addClass('catalog__active-country');
-    hideEmptyNamelists();
-    showFirstArtist();
+    buttonClickFunc('.catalog__Germany');
 });
 $('#catalog__flag-button-3').click(function(){
-    resetActiveCountry();
-    $('.catalog__Italy').addClass('catalog__active-country');
-    hideEmptyNamelists();
-    showFirstArtist();
+    buttonClickFunc('.catalog__Italy');
 });
 $('#catalog__flag-button-4').click(function(){
-    resetActiveCountry();
-    $('.catalog__Russia').addClass('catalog__active-country');
-    hideEmptyNamelists();
-    showFirstArtist();
+    buttonClickFunc('.catalog__Russia');
 });
 $('#catalog__flag-button-5').click(function(){
-    resetActiveCountry();
-    $('.catalog__Belgium').addClass('catalog__active-country');
-    hideEmptyNamelists();
-    showFirstArtist();
+    buttonClickFunc('.catalog__Belgium');
 });
 
 $('.catalog__names-list-item').click( function() {
@@ -338,7 +332,10 @@ $('.catalog__names-list-item').click( function() {
     else {
         $('#artist-unknown').addClass('catalog__author-active');
     }
-    $('.catalog__authors-left').get(0).scrollIntoView();
+    if ( $( document ).width() <= 1000 ) {
+        $('.catalog__authors-left').get(0).scrollIntoView();
+    }
+    
 });
 
 hideEmptyNamelists();
