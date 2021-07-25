@@ -198,10 +198,10 @@ function displayAllEvents() {
     $('#events__event-list').removeClass('events__event-list_hide-768');
 }
 
-function pagesPickEvents(cardId, btnId) {
+function pagesPickEvents(cardCls, btnCls) {
     $('.events__card,.events__pages-button').removeClass('events__card-700px_visible events__pages-button_active');
-    $('#'+cardId).addClass('events__card-700px_visible');
-    $('#'+btnId).addClass('events__pages-button_active');
+    $(cardCls).addClass('events__card-700px_visible');
+    $(btnCls).addClass('events__pages-button_active');
 }
 
 function toggleEditionsCaption() {
@@ -249,20 +249,20 @@ $('#header__bottom-menu-btn-5').click(function(){
     displayDropdawn('header__dropdown-5', this.id);
 });
 
-$('#events__pages-button-1').click(function(){
-    pagesPickEvents('events__card-1',this.id);
+$('.events__pages-button:eq(0)').click(function(){
+    pagesPickEvents('.events__card:eq(0)', '.events__pages-button:eq(0)');
 });
-$('#events__pages-button-2').click(function(){
-    pagesPickEvents('events__card-2',this.id);
+$('.events__pages-button:eq(1)').click(function(){
+    pagesPickEvents('.events__card:eq(1)', '.events__pages-button:eq(1)');
 });
-$('#events__pages-button-3').click(function(){
-    pagesPickEvents('events__card-3',this.id);
+$('.events__pages-button:eq(2)').click(function(){
+    pagesPickEvents('.events__card:eq(2)', '.events__pages-button:eq(2)');
 });
-$('#events__pages-button-4').click(function(){
-    pagesPickEvents('events__card-4',this.id);
+$('.events__pages-button:eq(3)').click(function(){
+    pagesPickEvents('.events__card:eq(3)', '.events__pages-button:eq(3)');
 });
-$('#events__pages-button-5').click(function(){
-    pagesPickEvents('events__card-5',this.id);
+$('.events__pages-button:eq(4)').click(function(){
+    pagesPickEvents('.events__card:eq(4)', '.events__pages-button:eq(4)');
 });
 
 $('.hero__btn').click(function(){

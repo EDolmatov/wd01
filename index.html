@@ -283,23 +283,23 @@
 	        <div class="container">
 	            <h2 class="catalog__header headers2">Каталог</h2>
 	            <ul class="catalog__flags-block" aria-label="Выбор страны">
-	                <li>
+	                <li class="catalog__flags-block-item">
 	                    <button aria-label="Франция" class="catalog__flag-button" id="catalog__flag-button-1">
 	                    </button>
 	                </li>
-	                <li>
+	                <li class="catalog__flags-block-item">
 	                    <button aria-label="Германия" class="catalog__flag-button" id="catalog__flag-button-2">
 	                    </button>
 	                </li>
-	                <li>
+	                <li class="catalog__flags-block-item">
 	                    <button aria-label="Италия" class="catalog__flag-button catalog__flag-button_active" id="catalog__flag-button-3">
 	                    </button>
 	                </li>
-	                <li>
+	                <li class="catalog__flags-block-item">
 	                    <button aria-label="Россия" class="catalog__flag-button" id="catalog__flag-button-4">
 	                    </button>
 	                </li>
-	                <li>
+	                <li class="catalog__flags-block-item">
 	                    <button aria-label="Бельгия" class="catalog__flag-button" id="catalog__flag-button-5">
 	                    </button>
 	                </li>
@@ -661,7 +661,7 @@
 	                События
 	            </h2>
 	            <ul class="events__event-list flexbox events__event-list_hide-768" id="events__event-list">
-	                <li class="events__card events__card-700px_visible" id="events__card-1">
+	                <li class="events__card events__card-700px_visible">
 	                    <img src="img/Event_1.png" class="events__card-img" alt="">
 	                    <p class="events__card-text-1">
 	                        Музей им. Щусева
@@ -675,7 +675,7 @@
 	                    </p>
 	                    <a href="" class="events__card-link">Подробнее</a>
 	                </li>
-	                <li class="events__card" id="events__card-2">
+	                <li class="events__card">
 	                    <img src="img/Event_2.png" class="events__card-img" alt="">
 	                    <p class="events__card-text-1">
 	                        ММОМА
@@ -688,7 +688,7 @@
 	                    </p>
 	                    <a href="" class="events__card-link">Подробнее</a>
 	                </li>
-	                <li class="events__card" id="events__card-3">
+	                <li class="events__card">
 	                    <img src="img/Event_3.png" class="events__card-img" alt="">
 	                    <p class="events__card-text-1">
 	                        Еврейский музей
@@ -702,7 +702,7 @@
 	                    </p>
 	                    <a href="" class="events__card-link">Подробнее</a>
 	                </li>
-	                <li class="events__card" id="events__card-4">
+	                <li class="events__card">
 	                    <img src="img/Event_4.png" class="events__card-img" alt="">
 	                    <p class="events__card-text-1">
 	                        Третьяковка на Крымском валу
@@ -715,7 +715,7 @@
 	                    </p>
 	                    <a href="" class="events__card-link">Подробнее</a>
 	                </li>
-	                <li class="events__card" id="events__card-5">
+	                <li class="events__card">
 	                    <img src="img/Event_5.png" class="events__card-img" alt="">
 	                    <p class="events__card-text-1">
 	                        ММАМ
@@ -729,7 +729,6 @@
 	                    </p>
 	                    <a href="" class="events__card-link">Подробнее</a>
 					</li>
-					<li class="events__card events__card-empty"></li>
 	            </ul>
 	
 	            <a href="#events__event-list" class="events__btn button-medium button-all">
@@ -753,73 +752,74 @@
 	                <p class="editions__caption" id="editions__caption-categories">Категории</p>
 	                <ul class="editions__category-list" aria-label="Фильтр по категориям">
 	                    
-	                    <li><label class="editions__category-label">
+	                    <li class="editions__category-list-item"><label class="editions__category-label">
 	                            <input type="checkbox" name="Bestsellers" class="editions__checkbox">
 	                            <span class="editions__custom-checkbox" aria-disabled="true"></span>
 	                            <span class="editions__category-name">Бестселлеры</span>
 	                    </label></li>
 	                    
-	                    <li><label class="editions__category-label">
+	                    <li class="editions__category-list-item"><label class="editions__category-label">
 	                            <input type="checkbox" name="Art" class="editions__checkbox">
 	                            <span class="editions__custom-checkbox" aria-disabled="true"></span>
 	                            <span class="editions__category-name">Искусство</span>
 	                    </label></li>
 	
-	                    <li><label class="editions__category-label">
+	                    <li class="editions__category-list-item"><label class="editions__category-label">
 	                            <input type="checkbox" name="Architecture" class="editions__checkbox">
 	                            <span class="editions__custom-checkbox" aria-disabled="true"></span>
 	                            <span class="editions__category-name">Архитектура</span>
 	                    </label></li>
 	
-	                    <li><label class="editions__category-label">
+	                    <li class="editions__category-list-item"><label class="editions__category-label">
 	                            <input type="checkbox" name="Design" class="editions__checkbox" checked>
 	                            <span class="editions__custom-checkbox" aria-disabled="true"></span>
 	                            <span class="editions__category-name">Дизайн</span>
 	                    </label></li>
 	                
-	                    <li><label class="editions__category-label">
+	                    <li class="editions__category-list-item">
+							<label class="editions__category-label">
 	                            <input type="checkbox" name="Fashion" class="editions__checkbox">
 	                            <span class="editions__custom-checkbox" aria-disabled="true"></span>
 	                            <span class="editions__category-name">Мода</span>
 	                    </label></li>
 	
-	                    <li><label class="editions__category-label">
+	                    <li class="editions__category-list-item"><label class="editions__category-label">
 	                            <input type="checkbox" name="Children" class="editions__checkbox">
 	                            <span class="editions__custom-checkbox" aria-disabled="true"></span>
 	                            <span class="editions__category-name">Детям</span>
 	                    </label></li>
 	
-	                    <li><label class="editions__category-label">
+	                    <li class="editions__category-list-item"><label class="editions__category-label">
 	                            <input type="checkbox" name="Fiction" class="editions__checkbox">
 	                            <span class="editions__custom-checkbox" aria-disabled="true"></span>
 	                            <span class="editions__category-name">Художественная литература</span>
 	                    </label></li>
 	                
-	                    <li><label class="editions__category-label">
+	                    <li class="editions__category-list-item"><label class="editions__category-label">
 	                            <input type="checkbox" name="Journalism" class="editions__checkbox">
 	                            <span class="editions__custom-checkbox" aria-disabled="true"></span>
 	                            <span class="editions__category-name">Публицистика</span>
 	                    </label></li>
 	
-	                    <li><label class="editions__category-label">
+	                    <li class="editions__category-list-item"><label class="editions__category-label">
 	                            <input type="checkbox" name="Travel guides" class="editions__checkbox">
 	                            <span class="editions__custom-checkbox" aria-disabled="true"></span>
 	                            <span class="editions__category-name">Путеводители</span>
 	                    </label></li>
 	
-	                    <li><label class="editions__category-label">
+	                    <li class="editions__category-list-item"><label class="editions__category-label">
 	                            <input type="checkbox" name="Philosophy" class="editions__checkbox">
 	                            <span class="editions__custom-checkbox" aria-disabled="true"></span>
 	                            <span class="editions__category-name">Философия</span>
 	                    </label></li>
 	            
-	                    <li><label class="editions__category-label">
+	                    <li class="editions__category-list-item"><label class="editions__category-label">
 	                            <input type="checkbox" name="Educational literature" class="editions__checkbox">
 	                            <span class="editions__custom-checkbox" aria-disabled="true"></span>
 	                            <span class="editions__category-name">Учебная литература</span>
 	                    </label></li>
 	
-	                    <li><label class="editions__category-label">
+	                    <li class="editions__category-list-item"><label class="editions__category-label">
 	                            <input type="checkbox" name="Magazines and newspapers" class="editions__checkbox">
 	                            <span class="editions__custom-checkbox" aria-disabled="true"></span>
 	                            <span class="editions__category-name">Журналы и газеты</span>
