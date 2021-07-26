@@ -1009,21 +1009,21 @@ header {
     max-width: 400px;
     transform: translateY(10px);
 }
-.gallery__hint a {
+.gallery__hint-link {
     text-decoration: none;
     color: var(--color-violet);
     transition: color 0.3s ease;
 }
-.gallery__hint a:focus {
+.gallery__hint-link:focus {
     color: white;
     background-color: var(--color-violet);
 }
-.gallery__hint a:focus:hover {
+.gallery__hint-link:focus:hover {
     color: var(--color-violet);
     background-color: transparent;
 }
-.gallery__hint a:active,
-.gallery__hint a:focus:active {
+.gallery__hint-link:active,
+.gallery__hint-link:focus:active {
     color:var(--color-dark-violet);
     background-color: transparent;
 }
@@ -1219,10 +1219,26 @@ header {
 .catalog__author-link-gallery {
     padding-top: 6px;
 }
-.catalog__author-link-gallery a {
+.catalog__link-gallery {
     color: var(--color-violet);
     text-decoration: none;
     font-weight: 600;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+.catalog__link-gallery:focus {
+    color: white;
+}
+.notouch .catalog__link-gallery:hover {
+    color: var(--color-violet);
+}
+.notouch .catalog__link-gallery:hover:active,
+.catalog__link-gallery:active {
+    color: var(--color-dark-violet);
+}
+.catalog__link-gallery:focus:not(.focus-visible),
+.catalog__names-empty-link:focus:not(.focus-visible) {
+    background-color: transparent;
+    color: var(--color-violet);
 }
 
 .catalog__authors-right {
