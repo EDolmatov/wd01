@@ -107,6 +107,7 @@ const partnerSwiper = new Swiper('.projects__swiper-container',
             nextEl: '.projects__btn-next',
             prevEl: '.projects__btn-prev',
         },
+        spaceBetween:0,
         breakpoints: {
             1721: {
                 slidesPerView:3,
