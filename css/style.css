@@ -1307,13 +1307,19 @@ header {
 	margin-bottom: 38px;
 }
 
+.catalog__authors-block {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
 .catalog__authors-left {
 	position: relative;
 	vertical-align: top;
 	display: inline-block;
 	max-width: 750px;
 	width: 100%;
-	margin-right: 45px;
 }
 
 .catalog__author-descr {
@@ -1707,7 +1713,9 @@ header {
 .events__card {
 	display: inline-block;
 	position: relative;
-	width: 500px;
+	overflow: hidden;
+	width: calc( (100% - 100px) / 3 );
+	max-width: 500px;
 	min-height: 700px;
 	margin-bottom: 48px;
 	padding-bottom: 80px;
@@ -1756,6 +1764,7 @@ header {
 .events__card-text-2 {
 	max-width: 460px;
 	padding-left: 50px;
+	padding-right: 40px;
 	white-space: normal;
 }
 
@@ -2056,6 +2065,7 @@ header {
 
 .projects {
 	padding-top: 79px;
+	overflow: hidden;
 }
 
 .projects, .contacts {
@@ -2188,9 +2198,10 @@ header {
 }
 
 .contacts__form-block {
+	padding-left: calc((99vw - 1600px) / 2);
 	padding-top: 122px;
 	padding-bottom: 60px;
-	max-width: 470px;
+	max-width: 570px;
 	width: 100%;
 }
 
@@ -2480,7 +2491,172 @@ header {
 		padding-left: 50px;
 		padding-right: 50px;
 	}
+	.header__top-menu {
+		margin-right: 0;
+		max-width: 60%;
+	}
+	.header__top-menu-item:not(:last-child) {
+		margin-right: calc(3vw);
+	}
+	.header__bottom-menu {
+		max-width: 60%;
+	}
+	.header__bottom-menu-item:not(:last-child) {
+		margin-right: calc( 3vw );
+	}
 
+	.hero {
+		background-image: url('../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 2_small.png');
+		background-size: cover;
+		min-height: 738px;
+		padding-top: 182px;
+	}
+	.hero__header {
+		margin-bottom: 13px;
+	}
+	.hero__text {
+		max-width: 661px;
+		margin-bottom: 133px;
+	}
+	.gallery {
+		min-height: 839px;
+	}
+
+	.gallery__right {
+		transform: translateX(34px);
+	}
+	.gallery__hint {
+		left: 49px;
+		max-width: 275px;
+	}
+	.gallery__swiper-container {
+		max-width: calc(62.5vw);
+		padding-top: 25px;
+	}
+	.gallery__wrapper {
+		position: relative;
+		align-items: flex-end;
+		z-index: 2;
+		height: calc(39.06vw);
+	}
+	.gallery__slide {
+		height: calc(18.23vw);
+		margin-bottom: calc(2.6vw);
+	}
+	.gallery__slide-btn {
+		outline: none;
+		position: relative;
+		width: calc(18.23vw);
+		height: calc(18.23vw);
+		padding: 0;
+		text-align: left;
+		cursor: auto;
+	}
+	.catalog__header {
+		margin-right: 38px;
+	}
+	.catalog__flags-block {
+		transform: translateY(-9px);
+	}
+	.catalog__authors-left {
+		max-width: 437px;
+	}
+	.catalog__authors-right {
+		max-width: calc(46.5vw);
+	}
+	.catalog__names-list {
+		max-height: 500px;
+		max-width: 100%;
+	}
+	.catalog__author-img {
+		width: 437px;
+		height: 274px;
+	}
+
+	.editions__right {
+		width: 629px;
+		overflow: hidden;
+	}
+	.editions__swiper-container {
+		width: 678px;
+	}
+	.editions__slide {
+		padding-bottom: 10px;
+		margin-bottom: 49px;
+		padding-right: 49px;
+	}
+	.editions__slide-img {
+		width: 290px;
+		height: 320px;
+		margin-bottom: 10px;
+	}
+	.editions__slide-textblock {
+		margin-bottom: 16px;
+	}
+	.editions__slide-book {
+		max-width: 65%;
+	}
+	.projects__text {
+		max-width: 99%;
+	}
+	.projects__partners-header {
+		margin-bottom: 25px;
+	}
+	.projects__swiper-container {
+		max-width: 818px;
+	}
+	.projects__slide {
+		width: 384px;
+		height: 128px;
+	}
+	.projects__partner-logo {
+		transform: translate(-50%, -50%) scale(85%);
+	}
+	.projects__btn-prev, .projects__btn-next {
+		top: 49px;
+	}
+	.contacts {
+		padding-top: 80px;
+	}
+
+	.contacts__form-block {
+		padding-left: 50px;
+	}
+	.contacts__input-field {
+		width: 335px;
+	}
+	.contacts__header-4 {
+		margin-bottom: 16px;
+	}
+	#contacts__btn-whatsapp {
+		margin-right: 27px;
+	}
+	.contacts__btn-round {
+		width: 60px;
+		height: 60px;
+		background-size: cover;
+		transform: translateY(-1px);
+	}
+	.contacts__map-block {
+		width: 52%;
+	}
+	.footer {
+		padding-top: 38px;
+	}
+	.footer__logo {
+		transform: translateX(2px);
+	}
+	.footer__link {
+		width: 60px;
+		height: 60px;
+		background-size: cover;
+	}
+	.footer__link-block-item:not(:last-child) {
+		margin-right: 26px;
+	}
+}
+
+@media (max-width:1040px) {
 	header {
 		margin-bottom: -97px;
 	}
@@ -2503,8 +2679,8 @@ header {
 		top: 0;
 		background-color: var(--color-black-90alpha);
 		width: 100%;
+		max-width: none;
 		min-height: 768px;
-		transition: opacity 0.4s ease, visibility 0.4s linear;
 	}
 	.header__top-menu-item {
 		display: block;
@@ -2573,7 +2749,7 @@ header {
 		transform: translateY(0);
 		overflow: hidden;
 		z-index: 23;
-		top: -119px;
+		top: -107px;
 		right: 0;
 		padding-left: 42px;
 		padding-top: 0;
@@ -2618,31 +2794,8 @@ header {
 		visibility: visible;
 		width: 260px;
 	}
-	.hero {
-		background-image: url('../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 2_small.png');
-		background-size: cover;
-		min-height: 738px;
-		padding-top: 182px;
-	}
-	.hero__header {
-		margin-bottom: 13px;
-	}
-	.hero__text {
-		max-width: 661px;
-		margin-bottom: 133px;
-	}
-	.gallery {
-		min-height: 839px;
-	}
 	.gallery__left {
-		width: 280px;
-	}
-	.gallery__right {
-		transform: translateX(34px);
-	}
-	.gallery__hint {
-		left: 49px;
-		max-width: 275px;
+		width: 28%;
 	}
 	.gallery__swiper-container {
 		max-width: 628px;
@@ -2650,6 +2803,7 @@ header {
 	}
 	.gallery__wrapper {
 		max-height: 594px;
+		height: 100%;
 	}
 	.gallery__buttons-block {
 		padding-left: 0;
@@ -2663,20 +2817,7 @@ header {
 		width: 280px;
 		height: 280px;
 	}
-	.catalog__header {
-		margin-right: 38px;
-	}
-	.catalog__flags-block {
-		transform: translateY(-9px);
-	}
-	.catalog__authors-left {
-		max-width: 437px;
-		margin-right: 45px;
-	}
-	.catalog__author-img {
-		width: 437px;
-		height: 274px;
-	}
+
 	.catalog__authors-right {
 		max-width: 437px;
 	}
@@ -2712,6 +2853,7 @@ header {
 	.catalog__names-empty-link {
 		font-size: 16px;
 	}
+	
 	.events__card {
 		width: 290px;
 		min-height: 683px;
@@ -2739,89 +2881,12 @@ header {
 	}
 	.events__card-text-2 {
 		padding-left: 35px;
+		padding-right: 0;
 		max-width: 255px;
 	}
 	.events__card-link {
 		left: 35px;
 		bottom: 50px;
-	}
-	.editions__right {
-		width: 629px;
-		overflow: hidden;
-	}
-	.editions__swiper-container {
-		width: 678px;
-	}
-	.editions__slide {
-		padding-bottom: 10px;
-		margin-bottom: 49px;
-		padding-right: 49px;
-	}
-	.editions__slide-img {
-		width: 290px;
-		height: 320px;
-		margin-bottom: 10px;
-	}
-	.editions__slide-textblock {
-		margin-bottom: 16px;
-	}
-	.editions__slide-book {
-		max-width: 65%;
-	}
-	.projects__text {
-		max-width: 99%;
-	}
-	.projects__partners-header {
-		margin-bottom: 25px;
-	}
-	.projects__swiper-container {
-		max-width: 818px;
-	}
-	.projects__slide {
-		width: 384px;
-		height: 128px;
-	}
-	.projects__partner-logo {
-		transform: translate(-50%, -50%) scale(85%);
-	}
-	.projects__btn-prev, .projects__btn-next {
-		top: 49px;
-	}
-	.contacts {
-		padding-top: 80px;
-	}
-
-	.contacts__input-field {
-		width: 335px;
-	}
-	.contacts__header-4 {
-		margin-bottom: 16px;
-	}
-	#contacts__btn-whatsapp {
-		margin-right: 27px;
-	}
-	.contacts__btn-round {
-		width: 60px;
-		height: 60px;
-		background-size: cover;
-		transform: translateY(-1px);
-	}
-	.contacts__map-block {
-		width: 52%;
-	}
-	.footer {
-		padding-top: 38px;
-	}
-	.footer__logo {
-		transform: translateX(2px);
-	}
-	.footer__link {
-		width: 60px;
-		height: 60px;
-		background-size: cover;
-	}
-	.footer__link-block-item:not(:last-child) {
-		margin-right: 26px;
 	}
 }
 
@@ -2875,6 +2940,7 @@ header {
 	}
 	.gallery__left {
 		margin-bottom: 25px;
+		width: 280px;
 	}
 	.gallery__right {
 		transform: translateX(0);
@@ -2913,12 +2979,7 @@ header {
 	.catalog__dates-list .flexbox {
 		padding-bottom: 32px;
 	}
-	.catalog__authors-block {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		align-items: flex-start;
-	}
+
 	.catalog__authors-right {
 		order: -1;
 		max-width: 100%;
@@ -2926,7 +2987,6 @@ header {
 	}
 	.catalog__authors-left {
 		max-width: 100%;
-		margin-right: 0;
 	}
 	.catalog__names-list {
 		align-items: flex-start;
@@ -3056,6 +3116,9 @@ header {
 	}
 	.projects__btn-prev, .projects__btn-next {
 		top: 38px;
+	}
+	.contacts__form-block {
+		padding-left: calc((98.5vw - 668px) / 2);
 	}
 	.contacts__map-block {
 		width: 45%;
@@ -3686,8 +3749,9 @@ header {
 		margin-right: 16px;
 	}
 	.contacts__form-block {
-		padding:0;
-		padding-bottom: 21px;
+		padding:0 15px 21px 15px;
+		max-width: 320px;
+		margin: 0 auto;
 	}
 	.footer {
 		padding-top: 17px;

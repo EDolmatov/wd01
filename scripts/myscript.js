@@ -42,7 +42,7 @@ const gallerySwiper = new Swiper('.gallery__swiper-container',
             prevEl: '.gallery__btn-prev',
         },
         breakpoints: {
-            1721: {
+            1041: {
                 slidesPerView:3,
                 slidesPerColumn: 2,
                 slidesPerGroup:3
