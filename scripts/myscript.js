@@ -42,7 +42,7 @@ const gallerySwiper = new Swiper('.gallery__swiper-container',
             prevEl: '.gallery__btn-prev',
         },
         breakpoints: {
-            1041: {
+            1241: {
                 slidesPerView:3,
                 slidesPerColumn: 2,
                 slidesPerGroup:3
@@ -76,12 +76,12 @@ const bookSwiper = new Swiper('.editions__swiper-container',
             prevEl: '.editions__btn-prev',
         },
         breakpoints: {
-            1721: {
+            1241: {
                 slidesPerView:3,
                 slidesPerColumn: 1,
                 slidesPerGroup:3
             },
-            1001: {
+            861: {
                 slidesPerView:2,
                 slidesPerColumn: 1,
                 slidesPerGroup:2
@@ -109,12 +109,12 @@ const partnerSwiper = new Swiper('.projects__swiper-container',
         },
         spaceBetween:0,
         breakpoints: {
-            1721: {
+            1241: {
                 slidesPerView:3,
                 slidesPerGroup:3,
                 spaceBetween:50
             },
-            1001: {
+            861: {
                 slidesPerView:2,
                 slidesPerGroup:2,
                 spaceBetween:50
