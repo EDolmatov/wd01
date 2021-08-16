@@ -47,7 +47,7 @@ const gallerySwiper = new Swiper('.gallery__swiper-container',
                 slidesPerColumn: 2,
                 slidesPerGroup:3
             },
-            721: {
+            541: {
                 slidesPerView:2,
                 slidesPerColumn: 2,
                 slidesPerGroup:2
@@ -86,7 +86,7 @@ const bookSwiper = new Swiper('.editions__swiper-container',
                 slidesPerColumn: 1,
                 slidesPerGroup:2
             },
-            721: {
+            541: {
                 slidesPerView:2,
                 slidesPerColumn: 1,
                 slidesPerGroup:2
