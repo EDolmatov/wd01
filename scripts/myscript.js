@@ -270,6 +270,24 @@ $('.hero__btn').click(function(){
     $('#contacts__map-block').get(0).scrollIntoView();
 });
 
+//tooltips position
+$('.tooltip').hover( function() {
+    var thisElem = $(this);
+    var popup = thisElem.find('.tooltip-popup');
+    var elemWidth = popup.outerWidth();
+    var elemOffset = thisElem.offset();
+    var windowWidth = $(window).width();
+    var distBetween = windowWidth - elemOffset.left;
+    var shift = -(elemWidth/2);
+    if (distBetween < elemWidth/2) {
+        shift -= (elemWidth/2) - distBetween + 15;      
+    }
+    if (elemOffset.left < elemWidth/2) {
+        shift += (elemWidth/2) - elemOffset.left;
+    }
+    popup.css('transform', 'translateX('+shift+'px)');
+});
+
 //Flags
 function resetActiveCountry() {
     $('.catalog__Italy,.catalog__France,.catalog__Russia,.catalog__Germany,.catalog__Belgium').removeClass('catalog__active-country');
