@@ -91,7 +91,6 @@ const bookSwiper = new Swiper('.editions__swiper-container',
                 slidesPerColumn: 1,
                 slidesPerGroup:2
             }
-
         }
 
     }
@@ -350,9 +349,6 @@ $('.catalog__names-list-item').click( function() {
     } 
     else {
         $('#artist-unknown').addClass('catalog__author-active');
-    }
-    if ( $( document ).width() <= 1000 ) {
-        $('.catalog__authors-left').get(0).scrollIntoView();
     }
     
 });

@@ -3692,7 +3692,9 @@ header {
 		width: 0;
 		margin-bottom: 0;
 		border: none;
-		transition: width 0.2s ease-in;
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity 0.4s ease-in, visibility 0.4s ease-in;
 	}
 	.events__card:nth-child(n), #events__event-list:target .events__card:nth-child(n) {
 		display: inline-block;
@@ -3711,8 +3713,6 @@ header {
 		max-width: none;
 		top: 67vw;
 		right: 3.1vw;
-		opacity: 0;
-		transition: opacity 0.1s ease-in;
 	}
 	.events__card-text-date {
 		top: 72vw;
@@ -3751,14 +3751,14 @@ header {
 		display: inline-block;
 		white-space: normal;
 		width: 90.6vw;
+		opacity: 1;
+		visibility: visible;
 		border: 1px solid var(--color-light-grey);
 	}
 	.events__card-700px_visible .events__card-text-2 {
 		white-space: normal;
 	}
-	.events__card-700px_visible .events__card-text-1 {
-		opacity: 1;
-	}
+
 	.editions {
 		padding-top: 50px;
 		padding-bottom: 0;
