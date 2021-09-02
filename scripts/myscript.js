@@ -188,6 +188,8 @@ if (!(('ontouchstart' in window) || window.DocumentTouch && document instanceof 
 }
 //header dropdown menu
 function displayDropdawn(dropdawnId, btnId) {
+    $('.header__dropdawn').not('#'+dropdawnId).removeClass('header__dropdawn_active');
+    $('.header__bottom-menu-btn').not('#'+btnId).removeClass('header__bottom-menu-btn_active');
     $('#'+dropdawnId).toggleClass('header__dropdawn_active');
     $('#'+btnId).toggleClass('header__bottom-menu-btn_active');
 }
@@ -213,11 +215,17 @@ $('.header__search-open,.header__search-close').click(function(){
     $('#header__search').toggleClass('header__search_visible');
 });
 
-$('.header__burger,.header__top-menu-close').click(function(){
-    $('#header__btn-enter,#header__top-menu-close,#header__top-menu').toggleClass('header__submenu_visible');
+$('.header__burger').click(function(){
+    $('#header__btn-enter,#header__top-menu-close,#header__top-menu').addClass('header__submenu_visible');
+    $('body').addClass('disable-scroll');
+});
+$('.header__top-menu-close').click(function(){
+    $('#header__btn-enter,#header__top-menu-close,#header__top-menu').removeClass('header__submenu_visible');
+    $('body').removeClass('disable-scroll');
 });
 $('.header__top-menu-item').click(function(){
     $('#header__btn-enter,#header__top-menu-close,#header__top-menu').removeClass('header__submenu_visible');
+    $('body').removeClass('disable-scroll');
 })
 
 $('.catalog__flag-button').click(function(){
@@ -285,6 +293,45 @@ $('.tooltip').hover( function() {
         shift += (elemWidth/2) - elemOffset.left;
     }
     popup.css('transform', 'translateX('+shift+'px)');
+});
+
+//modal window
+$('.gallery__slide-btn').click(function(){
+    var thisElem = $(this);
+    var image = thisElem.children(':first');
+    var imgUrl = image.attr('src');
+    var imgHeader = image.attr('alt');
+    var imgText = image.attr('data-text');
+    var imgAuthor = image.attr('data-author');
+    var imgDates = image.attr('data-dates');
+    $('.modal-window__img').css('background-image', 'url(' + imgUrl + ')');
+    if (imgHeader) {
+        $('.modal-window__header').text(imgHeader);
+    } else {
+        $('.modal-window__header').text('Название картины');
+    }
+    if (imgAuthor) {
+        $('.modal-window__author').text(imgAuthor);
+    } else {
+        $('.modal-window__author').text('Неизвестный автор');
+    }
+    if (imgDates) {
+        $('.modal-window__date').text(imgDates);
+    } else {
+        $('.modal-window__date').text('Дата создания');
+    }
+    if (imgText) {
+        $('.modal-window__text').text(imgText);
+    } else {
+        $('.modal-window__text').text('Здесь должно быть описание картины...');
+    }
+
+    $('.modal-window').addClass('modal-window_visible');
+    $('body').addClass('disable-scroll');
+});
+$('.modal-window__close').click(function(){
+    $('.modal-window').removeClass('modal-window_visible');
+    $('body').removeClass('disable-scroll');
 });
 
 //Flags

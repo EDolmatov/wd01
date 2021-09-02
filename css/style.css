@@ -82,64 +82,160 @@ a:focus, button:focus {
 
 @keyframes heroanim {
 	from {
+		background-image: url('../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 1.jpg');
 		background-size: 115%;
+	}
+	10% {
+		background-size: 165%;
+	}
+	15% {
+		background-size: 165%;
 	}
 	25% {
+		background-image: url('../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 1.jpg');
 		background-size: 115%;
 	}
-	40% {
-		background-size: 150%;
+	30% {
+		background-image: url('../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 2.jpg');
+		background-size: 115%;
+	}
+	43% {
+		background-size: 165%;
+	}
+	48% {
+		background-size: 165%;
 	}
 	60% {
-		background-size: 150%;
+		background-image: url('../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 2.jpg');
+		background-size: 115%;
 	}
-	75% {
+	65% {
+		background-image: url('../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 3.jpg');
+		background-size: 115%;
+	}
+	73% {
+		background-size: 165%;
+	}
+	78% {
+		background-size: 165%;
+	}
+	90% {
+		background-image: url('../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 3.jpg');
+		background-size: 115%;
+	}
+	95% {
+		background-image: url('../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 1.jpg');
 		background-size: 115%;
 	}
 	to {
+		background-image: url('../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 1.jpg');
 		background-size: 115%;
 	}
 }
 
 @keyframes heroanim-960 {
 	from {
-		background-size: 172%;
+		background-image: url('../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 1.jpg');
+		background-size: 250%;
+	}
+	10% {
+		background-size: 330%;
+	}
+	15% {
+		background-size: 330%;
 	}
 	25% {
-		background-size: 172%;
+		background-image: url('../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 1.jpg');
+		background-size: 250%;
 	}
-	40% {
-		background-size: 205%;
+	30% {
+		background-image: url('../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 2.jpg');
+		background-size: 250%;
+	}
+	43% {
+		background-size: 330%;
+	}
+	48% {
+		background-size: 330%;
 	}
 	60% {
-		background-size: 205%;
+		background-image: url('../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 2.jpg');
+		background-size: 250%;
 	}
-	75% {
-		background-size: 172%;
+	65% {
+		background-image: url('../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 3.jpg');
+		background-size: 250%;
+	}
+	73% {
+		background-size: 330%;
+	}
+	78% {
+		background-size: 330%;
+	}
+	90% {
+		background-image: url('../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 3.jpg');
+		background-size: 250%;
+	}
+	95% {
+		background-image: url('../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 1.jpg');
+		background-size: 250%;
 	}
 	to {
-		background-size: 172%;
+		background-image: url('../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 1.jpg');
+		background-size: 250%;
 	}
 }
 
 @keyframes heroanim-720 {
 	from {
-		background-size: 186%;
+		background-image: url('../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 1.jpg');
+		background-size: 327%;
+	}
+	10% {
+		background-size: 450%;
+	}
+	15% {
+		background-size: 450%;
 	}
 	25% {
-		background-size: 186%;
+		background-image: url('../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 1.jpg');
+		background-size: 327%;
 	}
-	40% {
-		background-size: 225%;
+	30% {
+		background-image: url('../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 2.jpg');
+		background-size: 327%;
+	}
+	43% {
+		background-size: 450%;
+	}
+	48% {
+		background-size: 450%;
 	}
 	60% {
-		background-size: 225%;
+		background-image: url('../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 2.jpg');
+		background-size: 327%;
 	}
-	75% {
-		background-size: 186%;
+	65% {
+		background-image: url('../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 3.jpg');
+		background-size: 327%;
+	}
+	73% {
+		background-size: 450%;
+	}
+	78% {
+		background-size: 450%;
+	}
+	90% {
+		background-image: url('../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 3.jpg');
+		background-size: 327%;
+	}
+	95% {
+		background-image: url('../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 1.jpg');
+		background-size: 327%;
 	}
 	to {
-		background-size: 186%;
+		background-image: url('../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 1.jpg');
+		background-size: 327%;
 	}
 }
 
@@ -149,6 +245,10 @@ html {
 
 body {
 	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+body.disable-scroll {
+	overflow: hidden;
 }
 
 .container {
@@ -224,6 +324,95 @@ p {
 	font-weight: 400;
 	line-height: 32px;
 }
+
+.modal-window {
+	opacity: 0;
+	visibility: hidden;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 199;
+	width: 100%;
+	height: 100%;
+	background-color: var(--color-black-transparent);
+	transition: opacity 0.4s ease-in, visibility 0.4s ease-in;
+}
+.modal-window_visible {
+	opacity: 1;
+	visibility: visible;
+}
+.modal-window__block {
+	background-color: white;
+	width: 900px;
+	height: min-content;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: 0 0 30px black;
+}
+.modal-window__img {
+	width: 400px;
+	height: 500px;
+	background-size: cover;
+}
+.modal-window__descr {
+	width: 495px;
+	padding: 121px 45px 50px 48px;
+}
+.modal-window__img,
+.modal-window__descr {
+	display: inline-block;
+	vertical-align: top;
+}
+.modal-window__author {
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+.modal-window__header {
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 12px;
+}
+.modal-window__date {
+	font-size: 12px;
+	font-weight: 400;
+	margin-bottom: 40px;
+	color: var(--color-grey);
+}
+.modal-window__text {
+	font-size: 16px;
+	font-weight: 400;
+}
+.modal-window__close {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 16px;
+	height: 16px;
+	background-image: url('../img/modal_close.svg');
+	background-color: transparent;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	transition: background-image 0.5s ease-in;
+}
+.modal-window__close:focus {
+	background-color: transparent;
+	outline: 2px solid var(--color-violet);
+	outline-offset: 1px;
+}
+.notouch .modal-window__close:hover {
+	background-image: url('../img/modal_close_hover.svg');
+}
+.notouch .modal-window__close:hover:active,
+.modal-window__close:active {
+	background-image: url('../img/modal_close_active.svg');
+}
+
 
 .btn-prev, .btn-next {
 	width: 30px;
@@ -897,7 +1086,7 @@ header {
 	background-image: url('../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 2.jpg');
 	background-position: center;
 	background-size: cover;
-	animation: heroanim 9s infinite ease-in-out;
+	animation: heroanim 15s infinite ease-in-out;
 	color: white;
 	padding-top: 240px;
 	padding-bottom: 20px;
@@ -2534,7 +2723,8 @@ header {
 	}
 
 	.hero {
-		background-image: url('../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 2_small.png');
+		/* background-image: url('../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 2_small.png'); */
+		animation: heroanim-960 15s infinite ease-in-out;
 		background-size: cover;
 		min-height: 738px;
 		padding-top: 182px;
@@ -2737,6 +2927,18 @@ header {
 }
 
 @media (max-width:1040px) {
+	.modal-window__block {
+		width: 594px;
+	}
+	.modal-window__img {
+		background-position: center center;
+		width: 264px;
+		height: 594px;
+	}
+	.modal-window__descr {
+		width: 325px;
+	}
+
 	header {
 		margin-bottom: -97px;
 	}
@@ -3006,6 +3208,18 @@ header {
 }
 
 @media(max-width:860px) {
+	.modal-window__block {
+		width: 87vw;
+	}
+	.modal-window__img {
+		width: 39.2vw;
+		height: 594px;
+	}
+	.modal-window__descr {
+		width: calc(47.8vw - 5px);
+		padding-right: 31px;
+	}
+
 	.container {
 		max-width: 698px;
 		padding-left: 15px;
@@ -3047,7 +3261,7 @@ header {
 		width: 100%;
 	}
 	.hero {
-		animation: heroanim-960 9s infinite ease-in-out;
+		animation: heroanim-960 15s infinite ease-in-out;
 	}
 	.gallery {
 		min-height: 1112px;
@@ -3248,7 +3462,7 @@ header {
 }
 @media(max-width:720px) {
 	.hero {
-    animation: heroanim-720 9s infinite ease-in-out;
+    animation: heroanim-720 15s infinite ease-in-out;
 	}
 	.hero__header {
     font-size: 54px;
@@ -3314,6 +3528,18 @@ header {
 	}
 }
 @media(max-width:540px) {
+	.modal-window__block {
+		width: 90vw;
+	}
+	.modal-window__img {
+		width: 100%;
+		height: 200px;
+	}
+	.modal-window__descr {
+		width: 100%;
+		padding: 17px 21px 26px 20px;
+	}
+
 	.container {
 		max-width: none;
 		padding-left: 15px;
@@ -3485,7 +3711,7 @@ header {
 		background-size: 13px 9px;
 	}
 	.hero {
-		animation: heroanim-960 9s infinite ease-in-out;
+		animation: heroanim-960 15s infinite ease-in-out;
 		min-height: 324px;
 		background-size: cover;
 		padding-top: 47px;
