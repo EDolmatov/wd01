@@ -178,6 +178,22 @@ const validateObj = new JustValidate('.contacts__form', {
             minLength: 'Должно быть не менее 2-х символов'
         },
         phone: 'Поле обязательно для заполнения'
+    },
+    submitHandler: function(form) {
+        var formData = new FormData(form);
+        var xmlReq = new XMLHttpRequest();
+
+        xmlReq.onreadystatechange = function() {
+            if (xmlReq.readyState === 4) {
+                if (xmlReq.status === 200) {
+                    console.log('Отправлено');
+                }
+            }
+        }
+
+        xmlReq.open('POST', 'sendmail.php', true);
+        xmlReq.send(formData);
+        form.reset();
     }
 });
 
