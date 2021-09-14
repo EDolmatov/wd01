@@ -191,7 +191,7 @@ const validateObj = new JustValidate('.contacts__form', {
             }
         }
 
-        xmlReq.open('POST', 'sendmail.php', true);
+        xmlReq.open('POST', 'scripts/sendmail.php', true);
         xmlReq.send(formData);
         form.reset();
     }
