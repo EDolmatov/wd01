@@ -194,6 +194,10 @@ const validateObj = new JustValidate('.contacts__form', {
         xmlReq.open('POST', 'scripts/sendmail.php', true);
         xmlReq.send(formData);
         form.reset();
+
+        $('.modal-window').addClass('modal-window_visible');
+        $('.modal-window__send-email').addClass('modal-window_visible');
+        $('body').addClass('disable-scroll');
     }
 });
 
@@ -343,14 +347,17 @@ $('.gallery__slide-btn').click(function(){
     }
 
     $('.modal-window').addClass('modal-window_visible');
+    $('.modal-window__block').addClass('modal-window_visible');
     $('body').addClass('disable-scroll');
 });
 $('.modal-window__close').click(function(){
-    $('.modal-window').removeClass('modal-window_visible');
+    $('.modal-window,.modal-window__block,.modal-window__send-email').removeClass('modal-window_visible');
     $('body').removeClass('disable-scroll');
 });
 
 //Flags
+var clickChangeCountry = false;
+
 function resetActiveCountry() {
     $('.catalog__Italy,.catalog__France,.catalog__Russia,.catalog__Germany,.catalog__Belgium').removeClass('catalog__active-country');
 }
@@ -377,6 +384,7 @@ function showFirstArtist() {
     var parentElem = firstArtist.closest('div.catalog__names');
     var parentElemLastSimbol = parentElem.attr('id').slice(-1);
     $('#catalog__dates-list-text' + parentElemLastSimbol).click();
+    clickChangeCountry = true;
     firstArtist.click();    
 }
 function buttonClickFunc(countrySelect) {
@@ -413,7 +421,13 @@ $('.catalog__names-list-item').click( function() {
     else {
         $('#artist-unknown').addClass('catalog__author-active');
     }
-    
+
+    var infoBlock = $('.catalog__author-active');
+    if(document.body.clientWidth <= 720 && clickChangeCountry == false) {
+        console.log('456456');
+        window.scrollTo(0, infoBlock.offset().top - 10);
+    }
+    clickChangeCountry = false;
 });
 
 hideEmptyNamelists();

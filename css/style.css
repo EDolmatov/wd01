@@ -337,12 +337,10 @@ p {
 	background-color: var(--color-black-transparent);
 	transition: opacity 0.4s ease-in, visibility 0.4s ease-in;
 }
-.modal-window_visible {
-	opacity: 1;
-	visibility: visible;
-}
+.modal-window__send-email,
 .modal-window__block {
 	background-color: white;
+	visibility: hidden;
 	width: 900px;
 	height: min-content;
 	position: absolute;
@@ -352,6 +350,14 @@ p {
 	right: 0;
 	bottom: 0;
 	box-shadow: 0 0 30px black;
+}
+.modal-window__send-email {
+	padding: 70px 40px;
+	max-width: 450px;
+}
+.modal-window_visible {
+	opacity: 1;
+	visibility: visible;
 }
 .modal-window__img {
 	width: 400px;
