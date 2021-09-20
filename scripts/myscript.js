@@ -350,7 +350,7 @@ $('.gallery__slide-btn').click(function(){
     $('.modal-window__block').addClass('modal-window_visible');
     $('body').addClass('disable-scroll');
 });
-$('.modal-window__close').click(function(){
+$('.modal-window__close,.modal-window__background').click(function(){
     $('.modal-window,.modal-window__block,.modal-window__send-email').removeClass('modal-window_visible');
     $('body').removeClass('disable-scroll');
 });
